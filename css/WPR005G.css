@@ -96,9 +96,22 @@
   background-color: #d9e1f2;
 }
 
+.td_div_flex{
+  display: flex;
+  flex-flow: row wrap;  
+  align-items: center;
+  justify-content: space-between;  
+}
+
 .div-inlin {
   border: 0px;
-  display: inline-block;
+  flex:0 0 44%;
+}
+.flex_auto{
+  flex: auto;
+}
+.flex_5{
+  flex: 0 0 5%
 }
 
 .allCheckbox {
