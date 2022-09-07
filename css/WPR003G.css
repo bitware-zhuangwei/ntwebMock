@@ -1,0 +1,36 @@
+
+ table {
+    width: 99%;
+    min-height: 90%;
+    height: 90%;
+    margin-left: 1%;
+    
+    table-layout: fixed;
+    word-wrap: break-word;
+    word-break: break-all;
+   
+}
+table tbody {
+    display: block;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.mytable td {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.mytable tr td:nth-child(1) {
+    width: 10%;
+}
+
+.mytable tr td:nth-child(2) {
+    width: 12%;
+}
+
+tr:nth-child(3n) {
+ height: 15px;
+
+}
