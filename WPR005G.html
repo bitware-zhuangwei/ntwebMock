@@ -1,10 +1,291 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
+<html lang="ja">
 
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/WPR005G.css" />
+  <title>WPR005G|登録ファイル閲覧</title>
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="navigate">
+      <div class="label_list">
+        <h3>ホーム</h3>
+        <h3>ファイルアップロード</h3>
+        <ul class="ul">
+          <li><a href="WPR004G.html">アップロード・登録</a></li>
+          <li><a href="WPR005G.html">登録ファイル閲覧</a></li>
+        </ul>
+        <h3>部数契約</h3>
+        <ul class="ul">
+          <li><a href="WPR006G.html">部数契約承認</a></li>
+        </ul>
+        <h3>その他</h3>
+        <ul class="ul">
+          <li><a href="WPR001G.html">パスワード変更</a></li>
+        </ul>
+        <h3>日販専用</h3>
+        <ul class="ul">
+          <li><a href="WPR007G.html">部数契約カレンダー閲覧</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="right_container">
+      <header>
+        <div class="header_title">
+          <p class="p_title">Web仕入受付サービス（仮）</p>
+          <p class="p_sub_title">ファイルアップロード　＞　登録ファイル閲覧</p>
+        </div>
+        <div class="right_header">
+          <span class="header_user">企業名　ID　ユーザー名称</span>
+          <a href="WPR002G.html" class="btn">ログアウト</a>
+        </div>
+      </header>
+      <div class="container">
+        <h1>登録ファイル検索</h1>
+        <table class="selectTable">
+          <tbody>
+            <tr>
+              <td class="name">出版社</td>
+              <td>
+                <input type="text" class="infoInput">
+              </td>
+            </tr>
+            <tr>
+              <td class="name">登録日</td>
+              <td>
+                <input type="text" class="dateInput"> ～ <input type="text" class="dateInput">
+              </td>
+            </tr>
+            <tr>
+              <td class="name">ファイル種別</td>
+              <td class="radioType">
+                <input type="radio" name="fileType" value="すべて" checked>すべて
+                <input class="radioCheck" type="radio" name="fileType" value="搬入連絡表">搬入連絡表
+                <input class="radioCheck" type="radio" name="fileType" value="指定データ">指定データ
+                <input class="radioCheck" type="radio" name="fileType" value="指数データ">指数データ
+              </td>
+            </tr>
+            <tr>
+              <td class="name">紐付ID</td>
+              <td>
+                <input type="text" class="infoInput">
+              </td>
+            </tr>
+            <tr>
+              <td class="name">ファイル名</td>
+              <td>
+                <input type="text" class="infoInput">
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="align-right">
+                <button class="searchButton">検索</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr class="splitLine">
+        <div id="detail-table">
+          <table class="infoTable">
+            <thead class="tableHeader">
+              <td>
+                <div class="div-inlin left">出版社</div>
+                <button class="sortButton right">▼</button>
+              </td>
+              <td>
+                <div class="div-inlin left">登録日</div>
+                <button class="sortButton right">▼</button>
+              </td>
+              <td>
+                <div class="div-inlin left">XXX</div>
+                <button class="sortButton right">▼</button>
+              </td>
+              <td>
+                <div class="div-inlin left">XXX</div>
+                <button class="sortButton right">▼</button>
+              </td>
+              <td>
+                <div class="div-inlin left">ダウンロード</div>
+                <input type="checkbox" class="allCheckbox">
+                <button class="sortButton right">▼</button>
+              </td>
+              <td>
+                <span>印刷</span>
+                <input type="checkbox" class="allCheckbox">
+              </td>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="align-center">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="button-area">
+          <button class="searchButton">ダウンロード</button>
+          <button class="searchButton">印刷</button>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- /wrap -->
 </body>
-</html>

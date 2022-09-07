@@ -1,0 +1,143 @@
+.selectTable {
+  width: 55%;
+  min-width: 700px;
+  border: 1px solid black;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 0px 0px 25px 25px;
+}
+
+.selectTable tbody tr td {
+  font-size: 20px;
+  border: 1px solid black;
+  line-height: 30px;
+}
+
+.selectTable tbody tr .radioType {
+  font-size: 10px;
+}
+
+.radioCheck {
+  margin: 10px 0px 10px 30px;
+}
+
+.searchButton {
+  min-width: 65px;
+  height: 22px;
+  margin: 0px;
+  border: 1px solid black;
+  padding: 4px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #d9d9d9;
+}
+
+.name {
+  width: 25%;
+}
+
+.infoInput {
+  width: 99%;
+  min-width: 49%;
+  height: 30px;
+  border: 1px solid black;
+  line-height: 30px;
+}
+
+.dateInput {
+  width: 45%;
+  min-width: 25%;
+  border: 1px solid black;
+}
+
+.splitLine {
+  border: 1px solid black;
+}
+
+.tableHeader {
+  background-color: #d9e1f2;
+  border: 1px solid black;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+#detail-table {
+  overflow-y: scroll;
+  height: 300px;
+  min-height: 60px;
+  min-width: 750px;
+}
+
+.infoTable {
+  border: 1px solid black;
+  border-spacing: 0;
+  border-collapse: collapse;
+  padding: 0px;
+  margin: 0px;
+}
+
+.infoTable tr td {
+  border: 1px solid black;
+  width: 250px;
+  height: 30px;
+
+}
+
+.sortButton {
+  width: 20px;
+  border: 0px;
+  border-left: 1px solid black;
+  margin: 0px;
+  padding: 0px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #d9e1f2;
+}
+
+.div-inlin {
+  border: 0px;
+  display: inline-block;
+}
+
+.allCheckbox {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 30px;
+  padding: 0px;
+  margin: 5px 0px 0px 0px;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.align-left {
+  display: inline-block;
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button-area {
+  margin: 8px 0px 10px 0px;
+  text-align: right;
+}
+
+.button-area .button {
+  padding: 2px 2px;
+  margin: 3px;
+}
