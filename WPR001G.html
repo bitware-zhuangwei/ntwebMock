@@ -1,10 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/WPR001G.css" />
+    <title>WPR001G|パスワード変更</title>
+    <script type="text/javascript">
+    	function henkoPassword(){
+    		var successFlag = true;
+    		document.getElementById("successResultDIV").style.display = "none";
+    		document.getElementById("ngResultDIV").style.display = "none";
+    		var newPassword = document.getElementById("newPassword").value;
+    		var confirmNewPassword = document.getElementById("confirmNewPassword").value;
+    		if(newPassword != confirmNewPassword){
+    			successFlag = false;
+    		}
+    		if(successFlag){
+    			document.getElementById("successResultDIV").style.display = "block";
+    		}else{
+    			document.getElementById("ngResultDIV").style.display = "block";
+    		}
+    	}
+    </script>
 </head>
 <body>
+
+<div style="margin-top: 50px;">
+	<div class="titleDIV" >
+		<h3>パスワード変更</h3>
+	</div>
+	<div class="resultDIV" >
+		<div id="ngResultDIV" class="ngResultDIV">新しいパスワードと新しいパスワード（確認）が一致しません。</div>
+		<div id="successResultDIV" class="successResultDIV">パスワードを変更しました。</div>
+	</div>
+	<div class="mainDIV">
+		<span class="redSpan" >*：必須項目</span>
+		<table class="myTable">
+			<tbody>
+				<tr>
+					<td class="leftTd">現在のパスワード<span class="redSpan">*</span></td>
+					<td><input type="text" name="password"></td>
+				</tr>
+				<tr>
+					<td class="leftTd">新しいパスワード<span class="redSpan">*</span></td>
+					<td><input id="newPassword" type="password"></td>
+				</tr>
+				<tr>
+					<td class="leftTd">新しいパスワード（確認）<span class="redSpan">*</span></td>
+					<td><input id="confirmNewPassword" type="password"></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="henkoButtonDIV">
+			<a href="javascript:henkoPassword();" class="btn">変更</a>
+		</div>
+	
+	</div>
+	<div class="footerDIV" >
+		<p>―パスワードの入力について―</p>
+		<p>パスワードは、８文字以上２０文字以内の英数字を混在させた構成にしてください。</p>
+	</div>
+</div>
 
 </body>
 </html>
