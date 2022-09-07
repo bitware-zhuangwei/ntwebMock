@@ -1,10 +1,105 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
+<html lang="ja">
 
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/wpr004g.css" />
+    <title>WPR004G|アップロード・登録</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="navigate">
+            <div class="label_list">
+                <h3>ホーム</h3>
+                <h3>ファイルアップロード</h3>
+                <ul class="ul">
+                    <li><a href="WPR004G.html">アップロード・登録</a></li>
+                    <li><a href="WPR005G.html">登録ファイル閲覧</a></li>
+                </ul>
+                <h3>部数契約</h3>
+                <ul class="ul">
+                    <li><a href="WPR006G.html">部数契約承認</a></li>
+                </ul>
+                <h3>その他</h3>
+                <ul class="ul">
+                    <li><a href="WPR001G.html">パスワード変更</a></li>
+                </ul>
+                <h3>日販専用</h3>
+                <ul class="ul">
+                    <li><a href="WPR007G.html">部数契約カレンダー閲覧</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="right_container">
+            <header>
+                <div class="header_title">
+                    <h4>Web仕入受付サービス（仮）</h4>
+                    <p>ファイルアップロード　＞　アップロード・登録</p>
+                </div>
+                <div class="right_header">
+                    <span class="header_user">企業名　ID　ユーザー名称</span>
+                    <a href="WPR002G.html" class="btn">ログアウト</a>
+                </div>
+            </header>
+            <div class="container">
+                <h1>アップロード</h1>
+                <div id="uploadFileList">
+                    <div class="uploadArea">
+                        <strong>搬入連絡表</strong>
+                        <button class="btn uploadBtn">ファイルを選択</button>
+                    </div>
+                    <div class="uploadArea">
+                        <strong>指定データ</strong>
+                        <button class="btn uploadBtn">ファイルを選択</button>
+                    </div>
+                    <div class="uploadArea">
+                        <strong>指数データ</strong>
+                        <button class="btn uploadBtn">ファイルを選択</button>
+                    </div>
+                </div>
+                <h1>アップロード結果確認＆登録</h1>
+                <div id="uploadResult">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="wd3">ファイル名</th>
+                                <th class="wd3">アップロード結果</th>
+                                <th class="wd6">エラー内容</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>XX出版社_搬入連絡表.xlxs</td>
+                                <td>OK</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>XX出版社_指定データ.xlxs</td>
+                                <td>OK</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>XX出版社_指数データ.xlxs</td>
+                                <td></td>
+                                <td>未定義のエラーが発生しました。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div id="buttonArea">
+                        <button id="resultClear" class="btn submitBtn">アップロード結果をクリア</button>
+                        <button id="fileInsert" class="btn submitBtn">ファイルを登録</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /wrap -->
+    <footer>
+        &copy;
+    </footer>
 </body>
+
 </html>

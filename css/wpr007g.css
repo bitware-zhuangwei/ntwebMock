@@ -1,0 +1,65 @@
+#searchArea{
+    margin-left: 2em;
+    width: 26em;
+}
+.searchBox{
+    display: flex;
+    flex-direction: row;
+    height: 4em;
+}
+.searchSelect{
+    align-self: center;
+    margin-left: 1.6em;
+    width: 14em;
+    height: 2.2em;
+}
+.searchName{
+    align-self: center;
+    width: 8em;
+    font-size: 1.6em;
+}
+.searchBtn{
+    width: 8em;
+    height: 2em;
+    float: right;
+}
+hr{
+    margin-top: 3.6em;
+}
+table{
+    border-collapse:collapse;
+    border-spacing: 0;
+    border: 1px solid #000000;
+}
+.overflow{
+    margin-top: 2em;
+    height:36.5em;
+    width: 28em;
+    display: block; 
+    overflow-y: scroll;
+    border-top: 1px solid #000000;
+}
+thead{
+    top: 0;
+    left: 0;
+    position:sticky;
+    border: 1px solid #000000;
+}
+tr{
+    height: 2.8em;
+    border: 1px solid #000000;
+}
+th{
+    background:#D9E1F2;
+    border: 1px solid #000000;
+}
+td{
+    border: 1px solid #000000;
+}
+.textTh{
+    width:12em;
+    text-align: left;
+}
+.markTh{
+    width:2em;
+}

@@ -1,0 +1,45 @@
+.uploadArea{
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+}
+input{
+    margin-top: 10px;
+}
+.listTable{
+    border-collapse:collapse;
+    border-spacing: 0;  
+}
+tr{
+    height: 36px;
+}
+th{
+    background:#D9E1F2;
+    border: 1px solid #000000;
+}
+.listTable td{
+    border: 1px solid #000000;
+}
+.wd3{
+    width: 256px;
+}
+.wd6{
+    width: 640px;
+}
+.submitBtn{
+    margin-top: 20px;
+    margin-left:10px;
+    height: 2.5em !important;
+}
+.uploadBtn{
+    height: 2.3em !important;
+    width: 9em;
+    margin-top: 16px;
+}
+#buttonArea{
+    display: flex;
+    justify-content: end;
+}
+#uploadResult{
+    width: 1152px;
+}
