@@ -6,7 +6,7 @@
 input{
     margin-top: 10px;
 }
-.listTable{
+table{
     border-collapse:collapse;
     border-spacing: 0;  
 }
@@ -17,7 +17,7 @@ th{
     background:#D9E1F2;
     border: 1px solid #000000;
 }
-.listTable td{
+td{
     border: 1px solid #000000;
 }
 .wd3{
