@@ -1,6 +1,6 @@
 
  table {
-    width: 99%;
+    width: 80%;
     min-height: 90%;
     height: 90%;
     margin-left: 1%;
@@ -33,4 +33,12 @@ table tbody {
 tr:nth-child(3n) {
  height: 15px;
 
+}
+h1{
+    margin-top: 1em;
+}
+
+.mytable tr td p{
+    width: max-content;
+    background-color: #FFFF00;
 }
