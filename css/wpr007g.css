@@ -5,7 +5,7 @@
 .searchBox{
     display: flex;
     flex-direction: row;
-    height: 4em;
+    height: 3.6em;
 }
 .searchSelect{
     align-self: center;
@@ -24,7 +24,7 @@
     float: right;
 }
 hr{
-    margin-top: 3.6em;
+    margin-top: 3.2em;
 }
 table{
     border-collapse:collapse;
@@ -34,8 +34,8 @@ table{
     height: 100%;
 }
 .overflow{
-    margin-top: 2em;
-    height: 25.1em;
+    margin-top: 1.6em;
+    height: 26.5em;
     width: 28em;
     display: block; 
     overflow-y: scroll;
@@ -48,7 +48,7 @@ thead{
     border: 1px solid #000000;
 }
 tr{
-    height: 2.5em;
+    height: 2.2em;
     border: 1px solid #000000;
 }
 th{
