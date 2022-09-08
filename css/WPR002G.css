@@ -1,0 +1,90 @@
+.titleDIV
+{
+	width:80%;
+	height: 40px;
+	margin: auto;
+	color: #0070C0;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.resultDIV
+{
+	margin: auto;
+	margin-top: 70px;
+    height: 20px;
+	width:80%;
+    font-weight: bold;
+    color: red;
+    font-size: 13px;
+    text-align: center;
+}
+
+.ngResultDIV
+{
+	display: none;
+}
+
+.mainDIV
+{
+	width: 35%;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.myTable .leftTd
+{
+	background-color: #0070C0;
+	padding-left: 25px;
+}
+
+.myTable
+{
+	width: 100%;
+}
+
+.myTable tr
+{
+	height: 40px;
+}
+
+.myTable td
+{
+	border: 1px solid #000000;
+	color: white;
+}
+
+.myTable td input
+{
+	border: 1px solid #000000;
+	width: 97%;
+	height: 100%;
+}
+
+.loginButtonDIV
+{
+	width: 100%;
+}
+
+.btn
+{
+	width: 100%;
+	padding: 0px 0px;
+	height: 23px;
+	font-size: 17px;
+}
+
+.footerDIV
+{
+	width: 70%;
+	margin: auto;
+	color: #0070C0;
+	font-size: 12px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+
+
+

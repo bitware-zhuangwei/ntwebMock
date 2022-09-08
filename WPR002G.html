@@ -1,10 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<link rel="stylesheet" href="css/index.css" />
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/WPR002G.css" />
+<title>WPR003G|ログイン</title>
+<script type="text/javascript">
+	function login(){
+		var successFlag = true;
+		document.getElementById("ngResultDIV").style.display = "none";
+		var loginID = document.getElementById("loginID").value;
+		var password = document.getElementById("password").value;
+		if(loginID != password){
+			successFlag = false;
+		}
+		if(successFlag){
+			
+		}else{
+			document.getElementById("ngResultDIV").style.display = "block";
+		}
+	}
+</script>
 </head>
 <body>
-
+	<div class="titleDIV">
+		<h1>Web仕入受付サービス（仮）</h1>
+		<span>ログイン画面</span>
+	</div>
+	<div class="resultDIV" >
+		<div id="ngResultDIV" class="ngResultDIV">
+			ログインIDまたは、パスワードが違います。
+		</div>
+	</div>
+	<div class="mainDIV">
+		<table class="myTable">
+			<tbody>
+				<tr>
+					<td class="leftTd">ログインID</td>
+					<td><input id="loginID" type="text"></td>
+				</tr>
+				<tr>
+					<td class="leftTd">パスワード</td>
+					<td><input id="password" type="password"></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="loginButtonDIV">
+			<a href="javascript:login();" class="btn">ログイン</a>
+		</div>
+		<div class="footerDIV">
+			<a href="">パスワードを忘れてしまった方</a>
+		</div>
+	</div>
 </body>
 </html>
