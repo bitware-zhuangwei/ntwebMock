@@ -3,30 +3,12 @@
   line-height: 20px;
 }
 
-.selectTable tbody tr td {
-  font-size: 20px;
-  line-height: 20px;
-}
-
-.selectTable tbody tr .radioType {
+.selectTable tr .radioType {
   font-size: 10px;
 }
 
 .radioCheck {
   margin: 10px 0px 10px 30px;
-}
-
-.searchButton {
-  min-width: 65px;
-  height: 22px;
-  margin: 0px;
-  border: 1px solid black;
-  padding: 4px;
-  font-size: 10px;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 4px;
-  background-color: #d9d9d9;
 }
 
 .name {
@@ -35,20 +17,25 @@
   padding: 10px 5px 10px 20px;
 }
 
-.infoInput {
-  width: 99%;
-  min-width: 49%;
+.searchButton {
+  min-width: 65px;
+  height: 22px;
+  margin: 0px;
   border: 1px solid black;
+  margin-right: 100px;
+  padding: 4px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #d9d9d9;
 }
 
-.dateInput {
-  width: 45.5%;
-  border: 1px solid black;
-  padding-left: 5px;
-}
-
-.splitLine {
-  border: 1px solid black;
+#detail-table {
+  height: 300px;
+  overflow-y: scroll;
+  min-height: 60px;
+  min-width: 750px;
 }
 
 .tableHeader {
@@ -63,13 +50,6 @@
   border: 1px solid black;
   position: sticky;
   background-color: #d9e1f2;
-}
-
-#detail-table {
-  height: 300px;
-  overflow-y: scroll;
-  min-height: 60px;
-  min-width: 750px;
 }
 
 .infoTable {
@@ -88,15 +68,8 @@
   padding: 0px;
 }
 
-.sortButton {
-  width: 20px;
-  border: 0px;
-  border-left: 1px solid black;
-  margin: 0px;
-  padding: 0px;
-  line-height: 30px;
+.align-center {
   text-align: center;
-  background-color: #d9e1f2;
 }
 
 .td_div_flex {
@@ -104,6 +77,15 @@
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.flex_left {
+  width: 50%;
+}
+
+.flex_right {
+  width: 50%;
+  text-align: right;
 }
 
 .div-inlin {
@@ -115,35 +97,24 @@
   text-align: right;
 }
 
+.sortButton {
+  width: 20px;
+  border: 0px;
+  border-left: 1px solid black;
+  margin: 0px;
+  padding: 0px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #d9e1f2;
+}
+
 .allCheckbox {
   width: 20px;
   height: 20px;
   text-align: center;
-  line-height: 20px;
+  line-height: 30px;
   padding: 0px;
   margin: 5px 0px 0px 0px;
-}
-
-.right {
-  float: right;
-}
-
-.left {
-  float: left;
-}
-
-.align-left {
-  display: inline-block;
-  text-align: left;
-}
-
-.align-right {
-  text-align: right;
-}
-
-.align-center {
-  text-align: center;
-  vertical-align: middle;
 }
 
 .button-area {
@@ -151,7 +122,15 @@
   text-align: right;
 }
 
-.button-area .button {
-  padding: 2px 2px;
+.button-area button {
   margin: 3px;
+  min-width: 65px;
+  height: 22px;
+  border: 1px solid black;
+  padding: 4px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #d9d9d9;
 }
