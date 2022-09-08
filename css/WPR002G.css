@@ -63,6 +63,7 @@
 
 .loginButtonDIV
 {
+	margin-top: 0.5em;
 	width: 100%;
 }
 
@@ -79,10 +80,14 @@
 {
 	width: 70%;
 	margin: auto;
-	color: #0070C0;
 	font-size: 12px;
 	margin-top: 10px;
 	text-align: center;
+}
+
+.footerDIV a
+{
+	color: #0070C0;
 }
 
 
