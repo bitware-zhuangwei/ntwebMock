@@ -1,4 +1,5 @@
 .selectTable {
+  min-width: 700px;
   font-size: 20px;
   line-height: 20px;
 }
@@ -11,7 +12,7 @@
   margin: 10px 0px 10px 30px;
 }
 
-.radioType input[type="radio"]:checked{
+.radioType input[type="radio"]:checked {
   accent-color: black;
 }
 
@@ -36,7 +37,6 @@
 }
 
 .splitLine {
-  border: 1px solid black;
   width: 82%;
   margin: 20px 0px 20px 10px;
 }
@@ -46,7 +46,7 @@
 }
 
 #detail-table {
-  height: 300px;
+  height: 305px;
   overflow-y: scroll;
   min-height: 60px;
   min-width: 750px;
@@ -54,29 +54,30 @@
 
 .tableHeader {
   background-color: #d9e1f2;
-  border: 1px solid black;
   font-size: 10px;
   font-weight: bold;
 }
 
 .tableHeader tr td {
   top: 0;
-  border: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
   position: sticky;
   background-color: #d9e1f2;
 }
 
 .infoTable {
   table-layout: fixed;
-  border: 1px solid black;
   border-spacing: 0;
   border-collapse: collapse;
   padding: 0px;
   margin: 0px 0px 0px 10px;
 }
 
-.infoTable tr td {
-  border: 1px solid black;
+.infoTable tbody tr td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
   width: 250px;
   height: 30px;
   padding: 0px;
@@ -91,6 +92,11 @@
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.scrBorder {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .flex_left {
