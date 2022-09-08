@@ -17,8 +17,7 @@
 }
 
 .radioType input[type="radio"]:checked{
-  background-color: red;
-  font-size: 100px;
+  accent-color: black;
 }
 
 .searchButton {
