@@ -73,12 +73,6 @@ footer {
     color: black;
 } */
 
-a {
-    color: black;
-    text-decoration: none;
-    /* font-weight: bold; */
-    margin-left: 1em;
-}
 
 .title {
     float: left;
@@ -131,7 +125,7 @@ a {
     font-size: 1.5em;
 }
 
-ul {
+#navi_bar{
     display: flex;
     flex-direction: row;
 }
@@ -180,4 +174,12 @@ ul#navi_bar li:hover ul {
     height: 4em;
     overflow: visible;
     z-index: 101;
+}
+
+
+#navi_bar a {
+    color: black;
+    text-decoration: none;
+    /* font-weight: bold; */
+    margin-left: 1em;
 }
