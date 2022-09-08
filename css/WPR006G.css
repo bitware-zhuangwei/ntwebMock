@@ -12,7 +12,7 @@
 }
 
 .name {
-  width: 150px;
+  width: 170px;
   min-width: 140px;
   padding: 10px 5px 10px 20px;
 }
@@ -29,6 +29,16 @@
   text-align: center;
   border-radius: 4px;
   background-color: #d9d9d9;
+}
+
+.splitLine {
+  border: 1px solid black;
+  width: 82%;
+  margin: 20px 0px 20px 10px;
+}
+
+#detail-div {
+  width: 80%;
 }
 
 #detail-table {
@@ -58,7 +68,7 @@
   border-spacing: 0;
   border-collapse: collapse;
   padding: 0px;
-  margin: 0px;
+  margin: 0px 0px 0px 10px;
 }
 
 .infoTable tr td {

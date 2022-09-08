@@ -11,80 +11,90 @@
 
 <body>
   <div id="wrap">
-    <div class="navigate">
-      <div class="label_list">
-        <h3>ホーム</h3>
-        <h3>ファイルアップロード</h3>
-        <ul class="ul">
-          <li><a href="WPR004G.html">アップロード・登録</a></li>
-          <li><a href="WPR005G.html">登録ファイル閲覧</a></li>
-        </ul>
-        <h3>部数契約</h3>
-        <ul class="ul">
-          <li><a href="WPR006G.html">部数契約承認</a></li>
-        </ul>
-        <h3>その他</h3>
-        <ul class="ul">
-          <li><a href="WPR001G.html">パスワード変更</a></li>
-        </ul>
-        <h3>日販専用</h3>
-        <ul class="ul">
-          <li><a href="WPR007G.html">部数契約カレンダー閲覧</a></li>
-        </ul>
+    <header>
+      <div class="header_title">
+        <p class="p_title">Web仕入受付サービス（仮）</p>
+        <div class="p_sub_title">
+          <ul id="navi_bar">
+            <li>
+              <a class="menu_title" href="WPR003G.html">ホーム</a>
+            </li>
+            <li>
+              <p class="menu_title">ファイルアップロード</p>
+              <ul>
+                <li><a href="WPR004G.html">Lアップロード・登録</a></li>
+                <li><a href="WPR005G.html">L登録ファイル閲覧</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="menu_title">部数契約</p>
+              <ul>
+                <li><a href="WPR006G.html">L部数契約承認</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="menu_title">その他</p>
+              <ul>
+                <li><a href="WPR001G.html">Lパスワード変更</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="menu_title">日販専用</p>
+              <ul>
+                <li><a href="WPR007G.html">L部数契約カレンダー閲覧</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
       </div>
-    </div>
-    <div class="right_container">
-      <header>
-        <div class="header_title">
-          <p class="p_title">Web仕入受付サービス（仮）</p>
-          <p class="p_sub_title">部数契約　＞　部数契約承認</p>
-        </div>
-        <div class="right_header">
-          <span class="header_user">企業名　ID　ユーザー名称</span>
-          <a href="WPR002G.html" class="btn">ログアウト</a>
-        </div>
-      </header>
-      <div class="container">
-        <h1>部数契約承認</h1>
-        <div>
-          <table class="selectTable">
-            <tr>
-              <td class="name">搬入年月日</td>
-              <td>
-                <input type="text" class="dateInput"> ～ <input type="text" class="dateInput">
-              </td>
-            </tr>
-            <tr>
-              <td class="name">部数契約公開日</td>
-              <td>
-                <input type="text" class="dateInput"> ～ <input type="text" class="dateInput">
-              </td>
-            </tr>
-            <tr>
-              <td class="name">出版社承認</td>
-              <td class="radioType">
-                <input type="radio" name="pressAdmit" value="すべて" checked>すべて
-                <input type="radio" name="pressAdmit" value="ON" class="radioCheck">ON
-                <input type="radio" name="pressAdmit" value="OFF" class="radioCheck">OFF
-              </td>
-            </tr>
-            <tr>
-              <td class="name">日販承認</td>
-              <td class="radioType">
-                <input type="radio" name="JPNAdmit" value="すべて" checked>すべて
-                <input type="radio" name="JPNAdmit" value="ON" class="radioCheck">ON
-                <input type="radio" name="JPNAdmit" value="OFF" class="radioCheck">OFF
-              </td>
-            </tr>
-            <tr>
-              <td></td>
-              <td class="align-center">
-                <button class="searchButton">検索</button>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <hr>
+      <div class="right_header">
+        <span class="header_user">企業名　ID　ユーザー名称</span>
+        <a href="WPR002G.html" class="btn">ログアウト</a>
+      </div>
+    </header>
+    <div class="container">
+      <h1>部数契約承認</h1>
+      <div>
+        <table class="selectTable">
+          <tr>
+            <td class="name">搬入年月日</td>
+            <td>
+              <input type="text" class="dateInput"> ～ <input type="text" class="dateInput">
+            </td>
+          </tr>
+          <tr>
+            <td class="name">部数契約公開日</td>
+            <td>
+              <input type="text" class="dateInput"> ～ <input type="text" class="dateInput">
+            </td>
+          </tr>
+          <tr>
+            <td class="name">出版社承認</td>
+            <td class="radioType">
+              <input type="radio" name="pressAdmit" value="すべて" checked>すべて
+              <input type="radio" name="pressAdmit" value="ON" class="radioCheck">ON
+              <input type="radio" name="pressAdmit" value="OFF" class="radioCheck">OFF
+            </td>
+          </tr>
+          <tr>
+            <td class="name">日販承認</td>
+            <td class="radioType">
+              <input type="radio" name="JPNAdmit" value="すべて" checked>すべて
+              <input type="radio" name="JPNAdmit" value="ON" class="radioCheck">ON
+              <input type="radio" name="JPNAdmit" value="OFF" class="radioCheck">OFF
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="align-center">
+              <button class="searchButton">検索</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <hr class="splitLine">
+      <div id="detail-div">
         <div id="detail-table">
           <table class="infoTable">
             <thead class="tableHeader">
@@ -243,5 +253,7 @@
           <button>承認更新</button>
         </div>
       </div>
-    </div><!-- /wrap -->
+    </div>
+    <footer></footer>
+  </div><!-- /wrap -->
 </body>
