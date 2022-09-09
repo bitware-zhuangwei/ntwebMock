@@ -44,7 +44,9 @@ td{
     display: flex;
     justify-content: end;
 }
-
+#uploadResult{
+    width:fit-content;
+}
 
 footer {
     margin-top: 0em;
