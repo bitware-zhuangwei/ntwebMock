@@ -59,15 +59,18 @@
             <div id="uploadFileList">
                 <div class="uploadArea">
                     <strong>搬入連絡表</strong>
-                    <button class="btn uploadBtn">ファイルを選択</button>
+                    <input type="file" name="file" id="file" class="inputfile"  />
+                    <label for="file" class="btn uploadBtn">ファイルを選択</label>
                 </div>
                 <div class="uploadArea">
                     <strong>指定データ</strong>
-                    <button class="btn uploadBtn">ファイルを選択</button>
+                    <input type="file" name="file1" id="file1" class="inputfile"  />
+                    <label for="file1" class="btn uploadBtn">ファイルを選択</label>
                 </div>
                 <div class="uploadArea">
                     <strong>指数データ</strong>
-                    <button class="btn uploadBtn">ファイルを選択</button>
+                    <input type="file" name="file2" id="file2" class="inputfile"  />
+                    <label for="file2" class="btn uploadBtn">ファイルを選択</label>
                 </div>
             </div>
             <h1>アップロード結果確認＆登録</h1>
@@ -99,8 +102,8 @@
                     </tbody>
                 </table>
                 <div id="buttonArea">
-                    <button id="resultClear" class="btn submitBtn">アップロード結果をクリア</button>
-                    <button id="fileInsert" class="btn submitBtn">ファイルを登録</button>
+                    <button id="resultClear" class="btn submitBtn" onclick='location.href=("WPR004G.html")'>アップロード結果をクリア</button>
+                    <button id="fileInsert" class="btn submitBtn" onclick='location.href=("WPR005G.html")'>ファイルを登録</button>
                 </div>
             </div>
         </div>
