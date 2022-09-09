@@ -85,8 +85,8 @@
   border-collapse: collapse;
   padding: 0px;
   margin: 0px 0px 0px 10px;
-  width: calc(100% - 0.9em);
-  min-width: calc(100% - 0.9em);
+  width: calc(100% - 0.84em);
+  min-width: calc(100% - 0.84em);
   font-size: 12px;
 }
 
