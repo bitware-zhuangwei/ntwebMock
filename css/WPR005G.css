@@ -9,7 +9,7 @@
 }
 
 .selectTable tbody tr .radioType {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .radioCheck {
@@ -26,7 +26,7 @@
   margin: 0px;
   border: 1px solid black;
   padding: 4px;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: bold;
   text-align: center;
   border-radius: 4px;
@@ -36,7 +36,7 @@
 .name {
   width: 150px;
   min-width: 140px;
-  padding: 10px 5px 10px 20px;
+  padding: 8px 5px 8px 20px;
 }
 
 .infoInput {
@@ -49,13 +49,13 @@
 }
 
 .splitLine {
-  width: 82%;
-  margin: 20px 0px 20px 10px;
+  width: 92%;
+  margin: 15px 0px 15px 10px;
 }
 
 .tableHeader {
   background-color: #d9e1f2;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -68,14 +68,15 @@
 }
 
 #detail-div {
-  width: 80%;
+  width: 90%;
 }
 
 #detail-table {
-  height: 305px;
+  height: 245px;
   overflow-y: scroll;
   min-height: 60px;
-  min-width: 750px;
+ width: 100%;
+ min-width: 100%;
 }
 
 .infoTable {
@@ -84,13 +85,15 @@
   border-collapse: collapse;
   padding: 0px;
   margin: 0px 0px 0px 10px;
+  width: calc(100% - 0.9em);
+  min-width: calc(100% - 0.9em);
+  font-size: 12px;
 }
 
 .infoTable tbody tr td {  
   border-left: 1px solid black;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
-  width: 250px;
   height: 30px;
   padding: 0px;
 }
@@ -166,4 +169,11 @@
 .button-area .button {
   padding: 2px 2px;
   margin: 3px;
+}
+
+footer {
+  margin-top: 0em;
+}
+.container{
+  padding-bottom: 0px;
 }

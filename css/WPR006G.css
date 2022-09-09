@@ -5,7 +5,7 @@
 }
 
 .selectTable tr .radioType {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .radioCheck {
@@ -19,7 +19,7 @@
 .name {
   width: 170px;
   min-width: 140px;
-  padding: 10px 5px 10px 20px;
+  padding: 8px 5px 8px 20px;
 }
 
 .searchButton {
@@ -29,7 +29,7 @@
   border: 1px solid black;
   margin-right: 100px;
   padding: 4px;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: bold;
   text-align: center;
   border-radius: 4px;
@@ -38,7 +38,7 @@
 
 .splitLine {
   width: 82%;
-  margin: 20px 0px 20px 10px;
+  margin: 15px 0px 15px 10px;
 }
 
 #detail-div {
@@ -46,7 +46,7 @@
 }
 
 #detail-table {
-  height: 305px;
+  height: 275px;
   overflow-y: scroll;
   min-height: 60px;
   min-width: 750px;
@@ -54,7 +54,7 @@
 
 .tableHeader {
   background-color: #d9e1f2;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -72,6 +72,7 @@
   border-collapse: collapse;
   padding: 0px;
   margin: 0px 0px 0px 10px;
+  font-size: 12px;
 }
 
 .infoTable tbody tr td {
@@ -153,4 +154,10 @@
   text-align: center;
   border-radius: 4px;
   background-color: #d9d9d9;
+}
+footer {
+  margin-top: 0em;
+}
+.container{
+  padding-bottom: 0px;
 }

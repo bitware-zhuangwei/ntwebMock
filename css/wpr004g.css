@@ -5,7 +5,7 @@
 .uploadArea{
     display: flex;
     flex-direction: column;
-    padding: 18px;
+    padding: 10px;
 }
 input{
     margin-top: 10px;
@@ -33,10 +33,10 @@ td{
 .submitBtn{
     margin-top: 20px;
     margin-left:10px;
-    height: 2.5em !important;
+    height: 2em !important;
 }
 .uploadBtn{
-    height: 2.3em !important;
+    height: 2em !important;
     width: 9em;
     margin-top: 16px;
 }
@@ -49,4 +49,7 @@ td{
 footer {
     margin-top: 0em;
     border-top: 0px;
+}
+#uploadResult{
+    font-size: 14px;
 }
