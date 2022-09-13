@@ -1,11 +1,11 @@
 .selectTable {
   min-width: 700px;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: var(--search-name-font-size);
+  line-height: var(--search-name-line-height);
 }
 
 .selectTable tr .radioType {
-  font-size: 12px;
+  font-size: var(--radio-font-size);
 }
 
 .radioCheck {
@@ -14,6 +14,11 @@
 
 .radioType input[type="radio"]:checked {
   accent-color: black;
+}
+.dateInput {
+  border: 1px solid black;
+  height: var(--input-height);
+
 }
 
 .name {
@@ -24,25 +29,15 @@
 
 .searchButton {
   min-width: 65px;
-  height: 22px;
-  margin: 0px;
-  border: 1px solid black;
-  margin-right: 100px;
-  padding: 4px;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 4px;
-  background-color: #d9d9d9;
 }
 
 .splitLine {
-  width: 82%;
-  margin: 15px 0px 15px 10px;
+  width: 92%;
+  margin: 12px 0px 12px 10px;
 }
 
 #detail-div {
-  width: 80%;
+  width: 91%;
 }
 
 #detail-table {
@@ -54,7 +49,7 @@
 
 .tableHeader {
   background-color: #d9e1f2;
-  font-size: 12px;
+  font-size: var(--table-font-size);
   font-weight: bold;
 }
 
@@ -72,7 +67,9 @@
   border-collapse: collapse;
   padding: 0px;
   margin: 0px 0px 0px 10px;
-  font-size: 12px;
+  width: calc(100% - 0.84em);
+  min-width: calc(100% - 0.84em);
+  font-size: var(--table-font-size);
 }
 
 .infoTable tbody tr td {
@@ -86,6 +83,10 @@
 
 .align-center {
   text-align: center;
+}
+
+.align-right {
+  text-align: right;
 }
 
 .td_div_flex {
@@ -139,21 +140,12 @@
 }
 
 .button-area {
-  margin: 8px 0px 10px 0px;
+  margin: 10px 0px 10px 0px;
   text-align: right;
 }
 
 .button-area button {
-  margin: 3px;
   min-width: 65px;
-  height: 22px;
-  border: 1px solid black;
-  padding: 4px;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 4px;
-  background-color: #d9d9d9;
 }
 footer {
   margin-top: 0em;
@@ -161,3 +153,4 @@ footer {
 .container{
   padding-bottom: 0px;
 }
+

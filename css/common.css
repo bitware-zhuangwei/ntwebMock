@@ -1,14 +1,15 @@
 :root {
     --btn-font-size: 14px;
-    --table-font-size: 12px;
-    --search-name-font-size: 12px;
+    --table-font-size: 14px;
+    --search-name-font-size: 20px;
+    --search-name-line-height: 20px;
     --search-item-margin: 10px;
-    --btn-height:  2em;
-    --radio-font-size: 12px;
-    --btn-background-color: #D9D9D9;
-    --btn-color: #333333;
-    --margin: 10px;
+    --btn-height: 2em;
+    --radio-font-size: 14px;
+    --margin: 6px;
     --tr-height:36px;
+    --input-height: 1.6em;
+    --input-font-size: 18px;
   }
 
 * {

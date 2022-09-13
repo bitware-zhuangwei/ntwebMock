@@ -1,15 +1,14 @@
 .selectTable {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: var(--search-name-font-size);
+  line-height: var(--search-name-line-height);
 }
-
 .selectTable tbody tr td {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: var(--search-name-font-size);
+  line-height:var(--search-name-line-height);
 }
 
 .selectTable tbody tr .radioType {
-  font-size: 12px;
+  font-size: var(--radio-font-size);
 }
 
 .radioCheck {
@@ -22,15 +21,7 @@
 
 .searchButton {
   min-width: 65px;
-  height: 22px;
-  margin: 0px;
-  border: 1px solid black;
-  padding: 4px;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 4px;
-  background-color: #d9d9d9;
+  margin-top: var(--margin);
 }
 
 .name {
@@ -42,20 +33,23 @@
 .infoInput {
   flex: 1;
   border: 1px solid black;
+  height: var(--input-height);
 }
 
 .dateInput {
   border: 1px solid black;
+  height: var(--input-height);
+
 }
 
 .splitLine {
-  width: 92%;
-  margin: 15px 0px 15px 10px;
+  width: 99%;
+  margin: 12px 0px 12px 10px;
 }
 
 .tableHeader {
   background-color: #d9e1f2;
-  font-size: 12px;
+  font-size: var(--table-font-size);
   font-weight: bold;
 }
 
@@ -68,7 +62,7 @@
 }
 
 #detail-div {
-  width: 90%;
+  width: 98%;
 }
 
 #detail-table {
@@ -87,7 +81,7 @@
   margin: 0px 0px 0px 10px;
   width: calc(100% - 0.84em);
   min-width: calc(100% - 0.84em);
-  font-size: 12px;
+  font-size: var(--table-font-size);
 }
 
 .infoTable tbody tr td {  
@@ -162,13 +156,11 @@
 }
 
 .button-area {
-  margin: 8px 0px 10px 0px;
   text-align: right;
 }
 
 .button-area .button {
   padding: 2px 2px;
-  margin: 3px;
 }
 
 footer {
