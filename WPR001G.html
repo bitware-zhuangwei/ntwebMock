@@ -27,43 +27,91 @@
     </script>
 </head>
 <body>
+	<div id="wrap">
+		<header>
+            <div class="header_title">
+                <p class="p_title">Web仕入受付サービス（仮）</p>
+                <div class="p_sub_title">
+                    <ul id="navi_bar">
+                        <li>
+                            <a class="menu_title" href="WPR003G.html">ホーム</a>
+                        </li>
+                        <li>
+                            <p class="menu_title">ファイルアップロード</p>
+                            <ul >
+                                <li><a href="WPR004G.html">アップロード・登録</a></li>
+                                <li><a href="WPR005G.html">登録ファイル閲覧</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="menu_title">部数契約</p>
+                            <ul>
+                                <li><a href="WPR006G.html">部数契約承認</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="menu_title">その他</p>
+                            <ul>
+                                <li><a href="WPR001G.html">パスワード変更</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="menu_title">日販専用</p>
+                            <ul>
+                                <li><a href="WPR007G.html">部数契約カレンダー閲覧</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="right_header">
+                <span class="header_user">企業名　ID　ユーザー名称</span>
+                <a href="WPR002G.html" class="btn">ログアウト</a>
+            </div>
+        </header>
+        <div class="container">
+        	<div class="contentDIV">
+				<div class="titleDIV" >
+					<h3>パスワード変更</h3>
+				</div>
+				<div class="resultDIV" >
+					<div id="ngResultDIV" class="ngResultDIV">新しいパスワードと新しいパスワード（確認）が一致しません。</div>
+					<div id="successResultDIV" class="successResultDIV">パスワードを変更しました。</div>
+				</div>
+				<div class="mainDIV">
+					<span class="redSpan" >*：必須項目</span>
+					<table class="myTable">
+						<tbody>
+							<tr>
+								<td class="leftTd">現在のパスワード<span class="redSpan">*</span></td>
+								<td><input id="password" type="password"></td>
+							</tr>
+							<tr>
+								<td class="leftTd">新しいパスワード<span class="redSpan">*</span></td>
+								<td><input id="newPassword" type="password"></td>
+							</tr>
+							<tr>
+								<td class="leftTd">新しいパスワード（確認）<span class="redSpan">*</span></td>
+								<td><input id="confirmNewPassword" type="password"></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="henkoButtonDIV">
+						<a href="javascript:henkoPassword();" class="loginBtn">変更</a>
+					</div>
+				
+				</div>
+				<div class="footerDIV" >
+					<p>―パスワードの入力について―</p>
+					<p>パスワードは、８文字以上２０文字以内の英数字を混在させた構成にしてください。</p>
+				</div>
+			</div>
+        </div>
+        <footer>  </footer>
+	</div>
 
-<div style="margin-top: 50px;">
-	<div class="titleDIV" >
-		<h3>パスワード変更</h3>
-	</div>
-	<div class="resultDIV" >
-		<div id="ngResultDIV" class="ngResultDIV">新しいパスワードと新しいパスワード（確認）が一致しません。</div>
-		<div id="successResultDIV" class="successResultDIV">パスワードを変更しました。</div>
-	</div>
-	<div class="mainDIV">
-		<span class="redSpan" >*：必須項目</span>
-		<table class="myTable">
-			<tbody>
-				<tr>
-					<td class="leftTd">現在のパスワード<span class="redSpan">*</span></td>
-					<td><input type="password" name="password"></td>
-				</tr>
-				<tr>
-					<td class="leftTd">新しいパスワード<span class="redSpan">*</span></td>
-					<td><input id="newPassword" type="password"></td>
-				</tr>
-				<tr>
-					<td class="leftTd">新しいパスワード（確認）<span class="redSpan">*</span></td>
-					<td><input id="confirmNewPassword" type="password"></td>
-				</tr>
-			</tbody>
-		</table>
-		<div class="henkoButtonDIV">
-			<a href="javascript:henkoPassword();" class="btn">変更</a>
-		</div>
-	
-	</div>
-	<div class="footerDIV" >
-		<p>―パスワードの入力について―</p>
-		<p>パスワードは、８文字以上２０文字以内の英数字を混在させた構成にしてください。</p>
-	</div>
-</div>
+
 
 </body>
 </html>
