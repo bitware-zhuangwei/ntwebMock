@@ -1,3 +1,16 @@
+:root {
+    --btn-font-size: 14px;
+    --table-font-size: 12px;
+    --search-name-font-size: 12px;
+    --search-item-margin: 10px;
+    --btn-height:  2em;
+    --radio-font-size: 12px;
+    --btn-background-color: #D9D9D9;
+    --btn-color: #333333;
+    --margin: 10px;
+    --tr-height:36px;
+  }
+
 * {
     padding: 0px;
     margin: 0px;
@@ -86,7 +99,7 @@ footer {
     *display: inline;
     padding: 0px 12px;
     margin-bottom: 0;
-    font-size: 14px;
+    font-size: var(--btn-font-size);
     color: #333333;
     text-align: center;
     text-shadow: 0 1px 1px rgb(255 255 255 / 75%);
