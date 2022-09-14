@@ -16,15 +16,18 @@ table{
     font-size: var(--table-font-size);
 }
 tr{
-    height: 36px;
+    height: var(--tr-height);
 }
 th{
     background:#D9E1F2;
     border: 1px solid #000000;
     text-align: left;
+    padding: 2.5px var(--table-padding);
+
 }
 td{
     border: 1px solid #000000;
+    padding: 2.5px var(--table-padding);
 }
 .wd3{
     width: 256px;

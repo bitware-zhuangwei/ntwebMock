@@ -7,9 +7,10 @@
     --btn-height: 2em;
     --radio-font-size: 14px;
     --margin: 6px;
-    --tr-height:36px;
+    --tr-height:34px;
     --input-height: 1.6em;
     --input-font-size: 18px;
+    --table-padding:6px;
   }
 
 * {

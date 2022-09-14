@@ -32,12 +32,12 @@
 }
 
 .splitLine {
-  width: 92%;
+  width: 98%;
   margin: 12px 0px 12px 10px;
 }
 
 #detail-div {
-  width: 91%;
+  width: 97%;
 }
 
 #detail-table {
@@ -77,8 +77,8 @@
   border-right: 1px solid black;
   border-bottom: 1px solid black;
   width: 250px;
-  height: 30px;
-  padding: 0px;
+  padding: 2.5px   var(--table-padding);
+
 }
 
 .align-center {
@@ -94,6 +94,7 @@
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
+  height: var(--tr-height);
 }
 
 .scrBorder {
@@ -103,6 +104,8 @@
 
 .flex_left {
   width: 50%;
+  padding-left: var(--table-padding);
+
 }
 
 .flex_right {
@@ -112,6 +115,8 @@
 
 .div-inlin {
   width: 40%;
+  padding-left: var(--table-padding);
+
 }
 
 .flex_5 {

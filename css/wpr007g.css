@@ -57,17 +57,22 @@ th{
     top: 0;
     left: 0;
     position:sticky;
+    
 }
 .thDiv{
     display: flex;
     height:100%;
     border-bottom: 1px solid #000000;
     align-items: center;
+    padding: var(--table-padding);
+
 }
 td{
     border-bottom: 1px solid #000000;
     border-left: 1px solid #000000;
     border-right: 1px solid #000000;
+    padding: var(--table-padding);
+
 }
 .textTh{
     width:12em;
