@@ -1,21 +1,89 @@
 
- table {
-    width: 80%;
-    min-height: 90%;
-    height: 90%;
-    margin-left: 1%;
-    table-layout: fixed;
-    word-wrap: break-word;
-    word-break: break-all;
-    font-size: 14px;
-   
+/* 小屏幕手机端 */
+@media screen and (min-width: 0px) and (max-width:992px) {
+    .phone_table td {
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+    .phone_table{
+        width: 100%;
+        min-height: 40%;
+        height: 40%;
+    }
+    /* .phone_table tr td:nth-child(1) {
+        width: 50%;
+    }
+    
+    .phone_table tr td:nth-child(2) {
+        width: 50%;
+    } */
+
+
+    .phone_table tr td p{
+        width: max-content;
+        background-color: #FFFF00;
+    }
+
+    tr:nth-child(4n) {
+        height: 15px;
+       
+       }
+      
+
+    .mytable{
+        display: none;
+    }
+    table {
+        width: 80%;
+        min-height: 40%;
+        height: 40%;
+        margin-left: 1%;
+        table-layout: fixed;
+        word-wrap: break-word;
+        word-break: break-all;
+        font-size: 16px;
+       
+    }
+    table tbody {
+        display: block;
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
 }
-table tbody {
-    display: block;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media screen and (min-width: 1080px) {
+    .phone_table {
+       display: none;
+    }
+    tr:nth-child(3n) {
+        height: 15px;
+       
+       }
+       table {
+        width: 80%;
+        min-height: 40%;
+        height: 40%;
+        margin-left: 1%;
+        table-layout: fixed;
+        word-wrap: break-word;
+        word-break: break-all;
+        font-size: 16px;
+       
+    }
+    table tbody {
+        display: block;
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
 }
+
+
+
+
+
 
 .mytable td {
     word-wrap: break-word;
@@ -23,17 +91,14 @@ table tbody {
 }
 
 .mytable tr td:nth-child(1) {
-    width: 10%;
+    width: 12%;
 }
 
 .mytable tr td:nth-child(2) {
     width: 12%;
 }
 
-tr:nth-child(3n) {
- height: 15px;
 
-}
 
 .mytable tr td p{
     width: max-content;

@@ -3,11 +3,47 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/WPR003G.css" />
+    <script src="https://kit.fontawesome.com/a5993139b5.js" crossorigin="anonymous"></script>
     <title>WPR003G|ホーム</title>
 </head>
+
+<script>
+    var isShow = false;
+    var isShowSubTitle = false;
+    function dropDown() {
+        if (isShow) {
+            document.getElementById("subTitle").style.overflow = "hidden";
+            document.getElementById("subTitle").style.zIndex = "101";
+            document.getElementById("subTitle").style.height = "0";
+            isShow = false;
+        } else {
+            document.getElementById("subTitle").style.overflow = "visible";
+            document.getElementById("subTitle").style.zIndex = "101";
+            document.getElementById("subTitle").style.height = "6em";
+            isShow = true
+        }
+    }
+
+    function fileUploadDrop() {
+        if (isShowSubTitle) {
+            document.getElementById("fileUpload").style.overflow = "hidden";
+            document.getElementById("fileUpload").style.zIndex = "101";
+            document.getElementById("fileUpload").style.height = "0";
+            isShowSubTitle = false;
+        } else {
+            document.getElementById("fileUpload").style.overflow = "visible";
+            document.getElementById("fileUpload").style.zIndex = "101";
+            document.getElementById("fileUpload").style.height = "4em";
+            isShowSubTitle = true
+        }
+    }
+
+
+</script>
 
 <body>
     <div id="wrap">
@@ -21,7 +57,7 @@
                         </li>
                         <li>
                             <p class="menu_title">ファイルアップロード</p>
-                            <ul >
+                            <ul>
                                 <li><a href="WPR004G.html">アップロード・登録</a></li>
                                 <li><a href="WPR005G.html">登録ファイル閲覧</a></li>
                             </ul>
@@ -30,267 +66,731 @@
                             <p class="menu_title">部数契約</p>
                             <ul>
                                 <li><a href="WPR006G.html">部数契約承認</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p class="menu_title">その他</p>
-                            <ul>
-                                <li><a href="WPR001G.html">パスワード変更</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p class="menu_title">日販専用</p>
-                            <ul>
                                 <li><a href="WPR007G.html">部数契約カレンダー閲覧</a></li>
                             </ul>
                         </li>
+
                     </ul>
                 </div>
-                
+
             </div>
             <div class="right_header">
-                <span class="header_user">企業名　ID　ユーザー名称</span>
-                <a href="WPR002G.html" class="btn">ログアウト</a>
+                <div>
+                    <i class="fa-solid fa-head-side-virus"></i>
+                    <span class="header_user">企業名　ID</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-key"></i>
+                    <a href="WPR001G.html" class="menu_title">パスワード変更</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <a href="WPR002G.html" class="menu_title">ログアウト</a>
+                </div>
+
+
             </div>
         </header>
+
+        <phoneHeader>
+            <div class="p_header_title">
+                <div onclick="javascript:dropDown();"><i class="fa-solid fa-bars"></i>
+                </div>
+                <p class="p_title">Web仕入受付サービス</p>
+                <div class="p_sub_title" id="subTitle">
+                    <ul id="navi_bar">
+                        <li class="flex1">
+                            <a class="menu_title" href="WPR003G.html">ホーム</a>
+                        </li>
+                        <li class="flex2">
+                            <p class="menu_title" onclick="">ファイルアップロード</p>
+                            <ul id="fileUpload">
+                                <li><a href="WPR004G.html">アップロード・登録</a></li>
+                                <li><a href="WPR005G.html">登録ファイル閲覧</a></li>
+                            </ul>
+                        </li>
+                        <li class="flex1">
+                            <p class="menu_title" onclick="">部数契約</p>
+                            <ul id="copyContact">
+                                <li><a href="WPR006G.html">部数契約承認</a></li>
+                                <li><a href="WPR007G.html">部数契約カレンダー閲覧</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="right_header">
+                <div >
+                    <i class="fa-solid fa-head-side-virus"></i>
+                </div>
+                <div onclick="location.href=('WPR001G.html')">
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                <div onclick="location.href=('WPR002G.html')">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+
+
+            </div>
+        </phoneHeader>
+
         <div class="container">
-            <h1>お知らせ一覧</h1>
-                <table class="mytable">
-                    <tbody>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類1</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類2</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類3</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類4</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類5</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類6</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類7</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類8</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類9</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類10</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類11</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類12</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類13</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類14</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類15</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類16</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類17</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類18</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類19</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類20</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td >YYYY/MM/DD</td>
-                            <td ><p>お知らせ種類21</p></td>
-                            <td >お知らせタイトル</td>
-                        </tr>
-                        <tr>
-                            <td ></td>
-                            <td ></td>
-                            <td >XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <h1>お知らせ</h1>
+            <table class="mytable">
+                <tbody>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類1</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類2</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類3</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類4</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類5</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類6</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類7</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類8</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類9</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類10</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類11</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類12</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類13</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類14</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類15</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類16</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類17</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類18</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類19</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類20</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類21</p>
+                        </td>
+                        <td>お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="phone_table">
+                <tbody>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類1</p>
+                        </td>
+                        
+                    </tr>
+                    <tr><td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類2</p>
+                        </td>
+                       
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類3</p>
+                        </td>
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類4</p>
+                        </td>
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類5</p>
+                        </td>
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類6</p>
+                        </td>
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類7</p>
+                        </td>
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類8</p>
+                        </td>
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類9</p>
+                        </td>
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類10</p>
+                        </td>
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類11</p>
+                        </td>
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類12</p>
+                        </td>
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類13</p>
+                        </td>
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類14</p>
+                        </td>
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類15</p>
+                        </td>
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類16</p>
+                        </td>
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類17</p>
+                        </td>
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類18</p>
+                        </td>
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類19</p>
+                        </td>
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類20</p>
+                        </td>
+                    </tr>
+                    <tr> <td colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>YYYY.MM.DD</td>
+                        <td>
+                            <p>お知らせ種類21</p>
+                        </td>
+                    </tr>
+                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
+                    <tr>
+                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+
         </div>
-        <footer></footer>
+        <footer>
+            <hr class="footer_hr">
+            <div class="footer_div">
+                Copyright&copy;2022 NIPPAN All Rights Reserved.
+            </div>
+        </footer>
+        <pfooter>
+            <div class="footer_div">
+                Copyright&copy;2022 NIPPAN All Rights Reserved.
+            </div>
+        </pfooter>
     </div><!-- /wrap -->
 </body>
+
 </html>
