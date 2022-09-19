@@ -1,5 +1,5 @@
 :root {
-    --btn-font-size: 14px;
+    --btn-font-size: 16px;
     --table-font-size: 14px;
     --search-name-font-size: 20px;
     --search-name-line-height: 20px;
@@ -377,4 +377,23 @@ h1 {
     margin-left: 20%;
     align-items: center;
     border-top: 0px;
+}
+
+.btn {
+    height: 2em;
+    line-height: 2em;
+    display: inline-block;
+    *display: inline;
+    padding: 0px 12px;
+    margin-bottom: 0;
+    font-size: var(--btn-font-size);
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 1px 1px rgb(255 255 255 / 75%);
+    cursor: pointer;
+    background-color: #003399;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    text-decoration: none;
+    vertical-align: middle;
 }

@@ -7,52 +7,129 @@
   <link rel="stylesheet" href="css/common.css" />
   <link rel="stylesheet" href="css/WPR005G.css" />
   <title>WPR005G|登録ファイル閲覧</title>
+  <script>
+        var isShow = false;
+    var isShowSubTitle = false;
+    function dropDown() {
+        if (isShow) {
+            document.getElementById("subTitle").style.overflow = "hidden";
+            document.getElementById("subTitle").style.zIndex = "101";
+            document.getElementById("subTitle").style.height = "0";
+            isShow = false;
+        } else {
+            document.getElementById("subTitle").style.overflow = "visible";
+            document.getElementById("subTitle").style.zIndex = "101";
+            document.getElementById("subTitle").style.height = "6em";
+            isShow = true
+        }
+    }
+
+    function fileUploadDrop() {
+        if (isShowSubTitle) {
+            document.getElementById("fileUpload").style.overflow = "hidden";
+            document.getElementById("fileUpload").style.zIndex = "101";
+            document.getElementById("fileUpload").style.height = "0";
+            isShowSubTitle = false;
+        } else {
+            document.getElementById("fileUpload").style.overflow = "visible";
+            document.getElementById("fileUpload").style.zIndex = "101";
+            document.getElementById("fileUpload").style.height = "4em";
+            isShowSubTitle = true
+        }
+    }
+  </script>
 </head>
 
 <body>
   <div id="wrap">
     <header>
       <div class="header_title">
-        <p class="p_title">Web仕入受付サービス（仮）</p>
-        <div class="p_sub_title">
-          <ul id="navi_bar">
-            <li>
-              <a class="menu_title" href="WPR003G.html">ホーム</a>
-            </li>
-            <li>
-              <p class="menu_title">ファイルアップロード</p>
-              <ul>
-                <li><a href="WPR004G.html">アップロード・登録</a></li>
-                <li><a href="WPR005G.html">登録ファイル閲覧</a></li>
+          <p class="p_title">Web仕入受付サービス（仮）</p>
+          <div class="p_sub_title">
+              <ul id="navi_bar">
+                  <li>
+                      <a class="menu_title" href="WPR003G.html">ホーム</a>
+                  </li>
+                  <li>
+                      <p class="menu_title">ファイルアップロード</p>
+                      <ul>
+                          <li><a href="WPR004G.html">アップロード・登録</a></li>
+                          <li><a href="WPR005G.html">登録ファイル閲覧</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <p class="menu_title">部数契約</p>
+                      <ul>
+                          <li><a href="WPR006G.html">部数契約承認</a></li>
+                          <li><a href="WPR007G.html">部数契約カレンダー閲覧</a></li>
+                      </ul>
+                  </li>
+
               </ul>
-            </li>
-            <li>
-              <p class="menu_title">部数契約</p>
-              <ul>
-                <li><a href="WPR006G.html">部数契約承認</a></li>
-              </ul>
-            </li>
-            <li>
-              <p class="menu_title">その他</p>
-              <ul>
-                <li><a href="WPR001G.html">パスワード変更</a></li>
-              </ul>
-            </li>
-            <li>
-              <p class="menu_title">日販専用</p>
-              <ul>
-                <li><a href="WPR007G.html">部数契約カレンダー閲覧</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+          </div>
 
       </div>
       <div class="right_header">
-        <span class="header_user">企業名　ID　ユーザー名称</span>
-        <a href="WPR002G.html" class="btn">ログアウト</a>
+          <div>
+              <i class="fa-solid fa-head-side-virus"></i>
+              <span class="header_user">企業名　ID</span>
+          </div>
+          <div>
+              <i class="fa-solid fa-key"></i>
+              <a href="WPR001G.html" class="menu_title">パスワード変更</a>
+          </div>
+          <div>
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <a href="WPR002G.html" class="menu_title">ログアウト</a>
+          </div>
+
+
       </div>
-    </header>
+  </header>
+
+  <phoneHeader>
+      <div class="p_header_title">
+          <div onclick="javascript:dropDown();"><i class="fa-solid fa-bars"></i>
+          </div>
+          <p class="p_title">Web仕入受付サービス</p>
+          <div class="p_sub_title" id="subTitle">
+              <ul id="navi_bar">
+                  <li class="flex1">
+                      <a class="menu_title" href="WPR003G.html">ホーム</a>
+                  </li>
+                  <li class="flex2">
+                      <p class="menu_title" onclick="">ファイルアップロード</p>
+                      <ul id="fileUpload">
+                          <li><a href="WPR004G.html">アップロード・登録</a></li>
+                          <li><a href="WPR005G.html">登録ファイル閲覧</a></li>
+                      </ul>
+                  </li>
+                  <li class="flex1">
+                      <p class="menu_title" onclick="">部数契約</p>
+                      <ul id="copyContact">
+                          <li><a href="WPR006G.html">部数契約承認</a></li>
+                          <li><a href="WPR007G.html">部数契約カレンダー閲覧</a></li>
+                      </ul>
+                  </li>
+
+              </ul>
+          </div>
+
+      </div>
+      <div class="right_header">
+          <div >
+              <i class="fa-solid fa-head-side-virus"></i>
+          </div>
+          <div onclick="location.href=('WPR001G.html')">
+              <i class="fa-solid fa-key"></i>
+          </div>
+          <div onclick="location.href=('WPR002G.html')">
+              <i class="fa-solid fa-right-from-bracket"></i>
+          </div>
+
+
+      </div>
+  </phoneHeader>
     <div class="container">
       <h1>登録ファイル検索</h1>
       <table class="selectTable">
