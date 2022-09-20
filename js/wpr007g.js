@@ -10,7 +10,7 @@ var vm = new Vue({
     methods: {
         init: function () {
             var dateTemp = "2022/05/29";
-            for (let i = 0; i < 20; i++) {
+            for (let i = 0; i < 30; i++) {
                 let date = this.addDate(dateTemp, 1)
                 this.infoList.push(date);
                 dateTemp = date;
@@ -18,10 +18,13 @@ var vm = new Vue({
             for(let i = 0; i < this.infoList.length; i++){
                 let newDate = this.addDate(this.infoList[i], 3)
                 var obj = {
+                    no: i+1,
                     date1:this.infoList[i],
                     week1:this.getWeek(this.infoList[i]),
                     date2:newDate,
-                    week2:this.getWeek(newDate)
+                    week2:this.getWeek(newDate),
+                    date3:newDate,
+                    week3:this.getWeek(newDate)
                 }
                 this.showInfoList.push(obj);
             }

@@ -1,15 +1,15 @@
 :root {
     --btn-font-size: 16px;
-    --table-font-size: 14px;
-    --search-name-font-size: 20px;
-    --search-name-line-height: 20px;
+    --table-font-size: 16px;
+    --search-name-font-size: 16px;
+    --search-name-line-height: 16px;
     --search-item-margin: 10px;
     --btn-height: 2em;
-    --radio-font-size: 14px;
+    --radio-font-size: 16px;
     --margin: 6px;
     --tr-height: 34px;
     --input-height: 1.6em;
-    --input-font-size: 18px;
+    --input-font-size: 16px;
     --table-padding: 6px;
 }
 
@@ -370,6 +370,7 @@ pfooter {
 
 h1 {
     margin: 15px 0px;
+    font-size: 24px;
 }
 
 .footer_hr {
@@ -393,7 +394,7 @@ h1 {
     cursor: pointer;
     background-color: #003399;
     border: 1px solid black;
-    border-radius: 0.5em;
+    border-radius: 0.3em;
     text-decoration: none;
     vertical-align: middle;
 }
