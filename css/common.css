@@ -44,9 +44,9 @@ header {
 }
 
 phoneHeader {
-    height: 2.5em;
-    min-height: 2.5em;
-    padding: 0.5em;
+    height: 3em;
+    min-height: 3em;
+    padding: 0.5em 0em;
     margin-bottom: 0%;
     line-height: 0.1em;
     background: #003399;
@@ -59,6 +59,11 @@ phoneHeader {
 
 /*  */
 @media screen and (min-width: 0px) and (max-width:1080px) {
+    html {
+        touch-action: none;
+        touch-action: pan-y;
+    }
+
     header {
         display: none;
     }
@@ -80,7 +85,7 @@ phoneHeader {
     }
 
     .p_header_title {
-        width: 70%;
+        width: 47%;
         display: flex;
         margin-top: 0.2em;
     }
@@ -89,22 +94,33 @@ phoneHeader {
         height: 100%;
         text-align: center;
         display: flex;
-        width: 30%;
+        width: 53%;
     }
+
+    .header_sub_title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub_title_span {
+        font-size: 4px;
+        margin-top: 10px;
+        word-break: keep-all;
+    }
+
 
     .p_title {
         font-weight: bold;
-        margin: 0.5em;
+        margin: 0.5em 0.1em;
         font-size: 18px;
+        word-break: keep-all;
     }
 
     .p_sub_title {
-        height: 0;
         width: 96%;
-        overflow: hidden;
-        margin-top: 1.9em;
+        display: none;
+        margin-top: 2.3em;
         background-color: #003399;
-        display: flex;
         /* flex-direction: column; */
         z-index: 101;
         position: absolute;
@@ -119,7 +135,7 @@ phoneHeader {
         width: 100%;
     }
 
-    #navi_bar li {
+    #navi_bar div {
         flex: 1;
         border: #ffffff 1px solid;
         text-align: left;
@@ -128,7 +144,7 @@ phoneHeader {
 
     }
 
-    #navi_bar li a {
+    #navi_bar div a {
         color: #ffffff;
         text-decoration: none;
     }
@@ -142,58 +158,50 @@ phoneHeader {
     }
 
     #fileUpload {
-        height: 0;
-        width: 98%;
-        overflow: hidden;
+        width: 100%;
         text-align: left;
-        background-color: #003399;
-        display: flex;
-        flex-direction: row;
-        margin-top: 0;
-        z-index: 102;
-        position: absolute;
+        background-color: #ffffff;
+        display: none;
+        flex-direction: column;
         list-style: none;
+        color: #000000;
 
     }
 
-    #fileUpload li {
+    #fileUpload div {
         flex: 1;
         line-height: 2em;
         text-align: left;
         border: #7F7F7F 1px solid;
     }
-
+    #fileUpload div a {
+        margin-left: 1em;
+        color: #000000;
+        font-weight: bold;
+    }
     #copyContact {
-        height: 0;
-        width: 98%;
-        overflow: hidden;
+        width:100%;
+        display: none;
         text-align: left;
-        background-color: #003399;
-        display: flex;
-        flex-direction: row;
-        z-index: 102;
-        position: absolute;
+        background-color: #ffffff;
+        flex-direction: column;
         list-style: none;
+        color: #000000;
 
     }
 
-    #copyContact li {
+    #copyContact div {
 
         line-height: 2em;
         text-align: left;
         border: #7F7F7F 1px solid;
     }
 
-    #copyContact li:nth-child(1) {
-
-        flex: 40%;
+    #copyContact div a {
+        margin-left: 1em;
+        color: #000000;
+        font-weight: bold;
     }
-
-    #copyContact li:nth-child(2) {
-
-        flex: 60%;
-    }
-
 }
 
 /*  */
@@ -371,6 +379,7 @@ pfooter {
 h1 {
     margin: 15px 0px;
     font-size: 24px;
+    line-height: 1.3em;
 }
 
 .footer_hr {

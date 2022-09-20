@@ -14,31 +14,37 @@
 <script>
     var isShow = false;
     var isShowSubTitle = false;
+    var isShowSubCopyTitle = false;
+
     function dropDown() {
         if (isShow) {
-            document.getElementById("subTitle").style.overflow = "hidden";
-            document.getElementById("subTitle").style.zIndex = "101";
-            document.getElementById("subTitle").style.height = "0";
+            document.getElementById("subTitle").style.display = "none";
             isShow = false;
+            isShowSubTitle = false;
+            isShowSubCopyTitle = false;
         } else {
-            document.getElementById("subTitle").style.overflow = "visible";
-            document.getElementById("subTitle").style.zIndex = "101";
-            document.getElementById("subTitle").style.height = "6em";
+            document.getElementById("subTitle").style.display = "flex";
+
             isShow = true
         }
     }
 
     function fileUploadDrop() {
         if (isShowSubTitle) {
-            document.getElementById("fileUpload").style.overflow = "hidden";
-            document.getElementById("fileUpload").style.zIndex = "101";
-            document.getElementById("fileUpload").style.height = "0";
+            document.getElementById("fileUpload").style.display = "none";
             isShowSubTitle = false;
         } else {
-            document.getElementById("fileUpload").style.overflow = "visible";
-            document.getElementById("fileUpload").style.zIndex = "101";
-            document.getElementById("fileUpload").style.height = "4em";
+            document.getElementById("fileUpload").style.display = "flex";          
             isShowSubTitle = true
+        }
+    }
+    function copyContactDrop() {
+        if (isShowSubCopyTitle) {
+            document.getElementById("copyContact").style.display = "none";
+            isShowSubCopyTitle = false;
+        } else {
+            document.getElementById("copyContact").style.display = "flex";          
+            isShowSubCopyTitle = true
         }
     }
 
@@ -76,7 +82,7 @@
             </div>
             <div class="right_header">
                 <div>
-                    <i class="fa-solid fa-head-side-virus"></i>
+                    <i class="fa-solid fa-user"></i>
                     <span class="header_user">企業名　ID</span>
                 </div>
                 <div>
@@ -98,38 +104,41 @@
                 </div>
                 <p class="p_title">Web仕入受付サービス</p>
                 <div class="p_sub_title" id="subTitle">
-                    <ul id="navi_bar">
-                        <li class="flex1">
+                    <div id="navi_bar">
+                        <div class="flex1">
                             <a class="menu_title" href="WPR003G.html">ホーム</a>
-                        </li>
-                        <li class="flex2">
-                            <p class="menu_title" onclick="">ファイルアップロード</p>
-                            <ul id="fileUpload">
-                                <li><a href="WPR004G.html">アップロード・登録</a></li>
-                                <li><a href="WPR005G.html">登録ファイル閲覧</a></li>
-                            </ul>
-                        </li>
-                        <li class="flex1">
-                            <p class="menu_title" onclick="">部数契約</p>
-                            <ul id="copyContact">
-                                <li><a href="WPR006G.html">部数契約承認</a></li>
-                                <li><a href="WPR007G.html">部数契約カレンダー閲覧</a></li>
-                            </ul>
-                        </li>
+                        </div>
+                        <div class="flex2">
+                            <p class="menu_title" onclick="javascript:fileUploadDrop()">ファイルアップロード</p>
+                        </div>
+                        <div id="fileUpload" class="flex2">
+                            <div><a href="WPR004G.html">アップロード・登録</a></div>
+                            <div><a href="WPR005G.html">登録ファイル閲覧</a></div>
+                        </div>
+                        <div class="flex1" id = "copyli">
+                            <p class="menu_title" onclick="javascript:copyContactDrop()">部数契約</p>
+                        </div>
+                        <div id="copyContact" class="flex2">
+                            <div><a href="WPR006G.html">部数契約承認</a></div>
+                            <div><a href="WPR007G.html">部数契約カレンダー閲覧</a></div>
+                        </div>
 
-                    </ul>
+                    </div>
                 </div>
 
             </div>
             <div class="right_header">
-                <div >
-                    <i class="fa-solid fa-head-side-virus"></i>
+                <div class="header_sub_title">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="sub_title_span">ユーザーID</div>
                 </div>
-                <div onclick="location.href=('WPR001G.html')">
+                <div class="header_sub_title" onclick="location.href=('WPR001G.html')">
                     <i class="fa-solid fa-key"></i>
+                    <div class="sub_title_span">パスワード変更</div>
                 </div>
-                <div onclick="location.href=('WPR002G.html')">
+                <div class="header_sub_title" onclick="location.href=('WPR002G.html')">
                     <i class="fa-solid fa-right-from-bracket"></i>
+                    <div class="sub_title_span">ログアウト</div>
                 </div>
 
 
@@ -773,11 +782,6 @@
                     </tr>
                 </tbody>
             </table>
-
-
-
-
-
         </div>
         <footer>
             <hr class="footer_hr">

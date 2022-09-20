@@ -4,7 +4,7 @@
     border: #000000 1px solid;
     display: flex;
     flex-direction: row;
-    height: 4.2em;
+    height: 5em;
 }
 .searchBox{
     display: flex;
@@ -18,11 +18,14 @@
     width: 80%;
     height:var(--input-height);
     font-size:var(--search-name-font-size);
+    line-height: 1.8em;
+
 }
 .searchName{
     align-self: center;
     width: 9em;
     font-size:var(--search-name-font-size);
+    line-height: 1.8em;
 }
 .searchBtn{
     min-width: 100px;
