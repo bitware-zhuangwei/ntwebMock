@@ -1,23 +1,45 @@
+@media screen and (min-width: 0px) and (max-width:992px) {
+	.contentDIV{
+		width: 100%;
+	}
+
+	.myTable
+	{
+		width: 90%;
+		font-size: var(--table-font-size);
+	}
+}
+
+
+@media screen and (min-width: 1080px) {
+	.contentDIV{
+		width: 600px;
+		margin: auto;
+		margin-top: 10px;
+		margin-left: 15%;
+	}	
+	
+	.myTable
+	{
+		width: 50%;
+		font-size: var(--table-font-size);
+	}
+}
 .container{
     overflow: auto;
 }
-.contentDIV{
-	margin-top: 40px;
-	margin-left: 150px;
-	margin-right: 150px;
-}
+
 .titleDIV
 {
-	width:80%;
-	height: 40px;
+	width:90%;
+	height: 30px;
 	margin: auto;
-	color: #0070C0;
 }
 
 .resultDIV
 {
-	width:80%;
-	margin: auto;
+	width:85%;
+	margin-left: 10px;
 	margin-top: 15px;
     margin-bottom: 15px;
     height: 20px;
@@ -41,8 +63,8 @@
 
 .mainDIV
 {
-	width: 70%;
-	max-width: 70%;
+	width: 85%;
+	max-width: 85%;
 	margin: auto;
 }
 
@@ -52,35 +74,18 @@
 	font-size: 12px;
 }
 
-.myTable .leftTd
-{
-	background-color: #0070C0;
-	padding-left: 25px;
-}
-
-.myTable
-{
-	width: 100%;
-	font-size: var(--table-font-size);
-}
-
 .myTable tr
 {
-	height: 40px;
+	height: 20px;
 }
 
-.myTable td
-{
-	border: 1px solid #000000;
-	color: white;
-	text-align: center;
-}
 
 .myTable td input
 {
 	border: 1px solid #000000;
 	width: 96%;
 	height: 100%;
+	margin-top: 5px;
 }
 
 .henkoButtonDIV
@@ -93,14 +98,16 @@
 
 .loginBtn
 {
-	width: 60px;
+	width: 95%;
+	color: white;
+	background-color: #003399;
+	margin-top: 25px;
 }
 
 .footerDIV
 {
-	width: 70%;
+	width: 85%;
 	margin: auto;
-	color: red;
 	font-size: 14px;
 	margin-top: 20px;
 }

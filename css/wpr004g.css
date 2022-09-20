@@ -1,3 +1,84 @@
+@media screen and (min-width: 0px) and (max-width:992px) {
+	#uploadFileListPhone{
+		margin-bottom: 1em;
+	}
+	
+	#uploadFileList{
+		display: none;
+	}
+	
+	.uploadArea{
+		margin-top: 10px;
+	}
+	
+	.uploadBtn{
+	    height: 2em !important;
+	    width: 20em;
+	}
+	
+	#uploadResult{
+		display: none;
+	}
+	
+	.submitBtn{
+	    margin-top: 20px;
+	    margin-left:10px;
+	    height: 2em !important;
+	    width: 20em;
+	}
+	
+	#buttonArea{
+	    justify-content: end;
+	}
+	
+	.wd1{
+    	width: 50px;
+	}
+	.wd3{
+	    width: 300px;
+	}
+	.wd6{
+	    width: 600px;
+	}
+}
+
+
+@media screen and (min-width: 1080px) {
+	#uploadFileListPhone{
+		display: none;
+	}
+	
+	.uploadBtn{
+	    height: 1.3em !important;
+	    width: 13em;
+	    line-height: 1em;
+	}
+	
+	#uploadResultPhone{
+		display: none;
+	}
+	
+	.submitBtn{
+	    margin-top: 20px;
+	    margin-left:10px;
+	    height: 2em !important;
+	}
+	
+	#buttonArea{
+	    display: flex;
+	    justify-content: end;
+	}
+	
+	.wd1{
+    	width: 50px;
+	}
+	.wd3{
+	    width: 256px;
+	}
+	.wd6{
+	    width: 640px;
+	}
+}
 .container{
     overflow: auto;
 }
@@ -6,6 +87,12 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
+}
+.fileDropArea{
+    border: 2px solid #7F7F7F;
+    border-style:dashed;
+    text-align: center;
+    max-width: 95%;
 }
 input{
     margin-top: 10px;
@@ -19,38 +106,26 @@ tr{
     height: var(--tr-height);
 }
 th{
-    background:#D9E1F2;
+    background:#B5BEE7;
     border: 1px solid #000000;
     text-align: left;
     padding: 2.5px var(--table-padding);
+    color : white;
+    cursor: pointer;
 
 }
 td{
     border: 1px solid #000000;
     padding: 2.5px var(--table-padding);
 }
-.wd3{
-    width: 256px;
+
+.redFont{
+    color: red;
 }
-.wd6{
-    width: 640px;
-}
-.submitBtn{
-    margin-top: 20px;
-    margin-left:10px;
-    height: 2em !important;
-}
-.uploadBtn{
-    height: 2em !important;
-    width: 9em;
-    margin-top: 16px;
-}
-#buttonArea{
-    display: flex;
-    justify-content: end;
-}
+
 #uploadResult{
     width:fit-content;
+    margin-left: 1em;
 }
 
 footer {
