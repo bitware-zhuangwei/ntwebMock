@@ -3,10 +3,52 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/wpr004g.css" />
+    <script src="https://kit.fontawesome.com/a5993139b5.js" crossorigin="anonymous"></script>
     <title>WPR004G|アップロード・登録</title>
+    <script type="text/javascript">
+	    var isShow = false;
+	    var isShowSubTitle = false;
+	    var isShowSubCopyTitle = false;
+	
+	    function dropDown() {
+	        if (isShow) {
+	            document.getElementById("subTitle").style.display = "none";
+	            isShow = false;
+	            isShowSubTitle = false;
+	            isShowSubCopyTitle = false;
+	        } else {
+	            document.getElementById("subTitle").style.display = "flex";
+	
+	            isShow = true
+	        }
+	    }
+	
+	    function fileUploadDrop() {
+	        if (isShowSubTitle) {
+	            document.getElementById("fileUpload").style.display = "none";
+	            isShowSubTitle = false;
+	        } else {
+	            document.getElementById("fileUpload").style.display = "flex";          
+	            isShowSubTitle = true
+	        }
+	    }
+	    function copyContactDrop() {
+	        if (isShowSubCopyTitle) {
+	            document.getElementById("copyContact").style.display = "none";
+	            isShowSubCopyTitle = false;
+	        } else {
+	            document.getElementById("copyContact").style.display = "flex";          
+	            isShowSubCopyTitle = true
+	        }
+	    }
+    	function sortFunction(type){
+    		window.location.href="WPR004G.html"
+    	}
+    </script>
 </head>
 
 <body>
@@ -21,7 +63,7 @@
                         </li>
                         <li>
                             <p class="menu_title">ファイルアップロード</p>
-                            <ul >
+                            <ul>
                                 <li><a href="WPR004G.html">アップロード・登録</a></li>
                                 <li><a href="WPR005G.html">登録ファイル閲覧</a></li>
                             </ul>
@@ -30,71 +72,153 @@
                             <p class="menu_title">部数契約</p>
                             <ul>
                                 <li><a href="WPR006G.html">部数契約承認</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p class="menu_title">その他</p>
-                            <ul>
-                                <li><a href="WPR001G.html">パスワード変更</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p class="menu_title">日販専用</p>
-                            <ul>
                                 <li><a href="WPR007G.html">部数契約カレンダー閲覧</a></li>
                             </ul>
                         </li>
+
                     </ul>
                 </div>
-                
+
             </div>
             <div class="right_header">
-                <span class="header_user">企業名　ID　ユーザー名称</span>
-                <a href="WPR002G.html" class="btn">ログアウト</a>
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <span class="header_user">企業名　ID</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-key"></i>
+                    <a href="WPR001G.html" class="menu_title">パスワード変更</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <a href="WPR002G.html" class="menu_title">ログアウト</a>
+                </div>
+
+
             </div>
         </header>
-        
+
+        <phoneHeader>
+            <div class="p_header_title">
+                <div onclick="javascript:dropDown();"><i class="fa-solid fa-bars"></i>
+                </div>
+                <p class="p_title">Web仕入受付サービス</p>
+                <div class="p_sub_title" id="subTitle">
+                    <div id="navi_bar">
+                        <div class="flex1">
+                            <a class="menu_title" href="WPR003G.html">ホーム</a>
+                        </div>
+                        <div class="flex2">
+                            <p class="menu_title" onclick="javascript:fileUploadDrop()">ファイルアップロード</p>
+                        </div>
+                        <div id="fileUpload" class="flex2">
+                            <div><a href="WPR004G.html">アップロード・登録</a></div>
+                            <div><a href="WPR005G.html">登録ファイル閲覧</a></div>
+                        </div>
+                        <div class="flex1" id = "copyli">
+                            <p class="menu_title" onclick="javascript:copyContactDrop()">部数契約</p>
+                        </div>
+                        <div id="copyContact" class="flex2">
+                            <div><a href="WPR006G.html">部数契約承認</a></div>
+                            <div><a href="WPR007G.html">部数契約カレンダー閲覧</a></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="right_header">
+                <div class="header_sub_title">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="sub_title_span">ユーザーID</div>
+                </div>
+                <div class="header_sub_title" onclick="location.href=('WPR001G.html')">
+                    <i class="fa-solid fa-key"></i>
+                    <div class="sub_title_span">パスワード変更</div>
+                </div>
+                <div class="header_sub_title" onclick="location.href=('WPR002G.html')">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <div class="sub_title_span">ログアウト</div>
+                </div>
+
+
+            </div>
+        </phoneHeader>
         <div class="container">
-            <h1>アップロード</h1>
+            <h2>アップロード</h2>
             <div id="uploadFileList">
                 <div class="uploadArea">
                     <strong>搬入連絡表</strong>
+                    <div class="fileDropArea">
+                    	<p>ここにファイルをドロップ</p>
+                    	<p>または</p>
+	                    <input type="file" name="file" id="file" class="inputfile"  />
+	                    <label for="file" class="btn uploadBtn">ファイルを選択</label>
+                    </div>
+                </div>
+                <div class="uploadArea">
+                <strong>指定データ</strong>
+                	<div class="fileDropArea">
+                    	<p>ここにファイルをドロップ</p>
+                    	<p>または</p>
+	                    <input type="file" name="file1" id="file1" class="inputfile"  />
+                    	<label for="file1" class="btn uploadBtn">ファイルを選択</label>
+                    </div>
+                </div>
+                <div class="uploadArea">
+                    <strong>指数データ</strong>
+                    <div class="fileDropArea">
+                    	<p>ここにファイルをドロップ</p>
+                    	<p>または</p>
+	                    <input type="file" name="file2" id="file2" class="inputfile"  />
+                    	<label for="file2" class="btn uploadBtn">ファイルを選択</label>
+                    </div>
+                </div>
+            </div>
+            <div id="uploadFileListPhone">
+                <div class="uploadArea">
+                    <span>搬入連絡表</span>
                     <input type="file" name="file" id="file" class="inputfile"  />
                     <label for="file" class="btn uploadBtn">ファイルを選択</label>
                 </div>
                 <div class="uploadArea">
-                    <strong>指定データ</strong>
+                    <span>指定データ</span>
                     <input type="file" name="file1" id="file1" class="inputfile"  />
                     <label for="file1" class="btn uploadBtn">ファイルを選択</label>
                 </div>
                 <div class="uploadArea">
-                    <strong>指数データ</strong>
+                    <span>指数データ</span>
                     <input type="file" name="file2" id="file2" class="inputfile"  />
                     <label for="file2" class="btn uploadBtn">ファイルを選択</label>
                 </div>
             </div>
-            <h1>アップロード結果確認＆登録</h1>
+            <h2>アップロード結果確認＆登録</h2>
             <div id="uploadResult">
+            	<span>○件のファイルを登録できました。受付IDはXXXXです。</span>
                 <table>
                     <thead>
                         <tr>
-                            <th class="wd3">ファイル名</th>
-                            <th class="wd3">アップロード結果</th>
-                            <th class="wd6">エラー内容</th>
+                        	<th class="wd1" onclick="javascript:sortFunction(1);" >No.</th>
+                            <th class="wd3" onclick="javascript:sortFunction(2);">ファイル名</th>
+                            <th class="wd3" onclick="javascript:sortFunction(3);">チェック結果</th>
+                            <th class="wd6" onclick="javascript:sortFunction(4);">エラー内容</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                        	<td>1</td>
                             <td>XX出版社_搬入連絡表.xlxs</td>
                             <td>OK</td>
                             <td></td>
                         </tr>
                         <tr>
+                        	<td>2</td>
                             <td>XX出版社_指定データ.xlxs</td>
                             <td>OK</td>
                             <td></td>
                         </tr>
                         <tr>
+                        	<td>3</td>
                             <td>XX出版社_指数データ.xlxs</td>
                             <td></td>
                             <td>未定義のエラーが発生しました。</td>
@@ -106,8 +230,56 @@
                     <button id="fileInsert" class="btn submitBtn" onclick='location.href=("WPR005G.html")'>ファイルを登録</button>
                 </div>
             </div>
+            <div id="uploadResultPhone">
+            	<span>○件ＯＫです。受付IDはXXXXです</span>
+                <table>
+                    <tbody>
+                        <tr>
+                        	<td class="wd1">
+                        		<p>OK</p>
+                        	</td>
+                        	<td class="wd3">
+                        		<p>XX出版社_搬入連絡表.xlxs</p>
+                        		<p></p>
+                        	</td>
+                        </tr>
+                        <tr>
+                        	<td class="wd1">
+                        		<p>OK</p>
+                        	</td>
+                        	<td class="wd3">
+                        		<p>XX出版社_搬入連絡表.xlxs</p>
+                        		<p></p>
+                        	</td>
+                        </tr>
+                        <tr>
+                        	<td class="wd1 redFont">
+                        		<p>NG</p>
+                        	</td>
+                        	<td class="wd3">
+                        		<p>XX出版社_指定データ.xlxs</p>
+                        		<p class="redFont">未定義のエラーが発生しました。</p>
+                        	</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="buttonArea">
+	                <p><button id="resultClear" class="btn submitBtn" onclick='location.href=("WPR004G.html")'>アップロード結果をクリア</button></p>
+	                <p><button id="fileInsert" class="btn submitBtn" onclick='location.href=("WPR005G.html")'>ファイルを登録</button></p>
+                </div>
+            </div>
         </div>
-        <footer>  </footer>
+        <footer>
+            <hr class="footer_hr">
+            <div class="footer_div">
+                Copyright&copy;2022 NIPPAN All Rights Reserved.
+            </div>
+        </footer>
+        <pfooter>
+            <div class="footer_div">
+                Copyright&copy;2022 NIPPAN All Rights Reserved.
+            </div>
+        </pfooter>
     </div><!-- /wrap -->
 
 </body>

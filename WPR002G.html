@@ -2,57 +2,207 @@
 <html lang="ja">
 
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="css/index.css" />
-<link rel="stylesheet" href="css/common.css" />
-<link rel="stylesheet" href="css/WPR002G.css" />
-<title>WPR003G|ログイン</title>
-<script type="text/javascript">
-	function login(){
-		var successFlag = true;
-		document.getElementById("ngResultDIV").style.display = "none";
-		var loginID = document.getElementById("loginID").value;
-		var password = document.getElementById("password").value;
-		if(loginID != password){
-			successFlag = false;
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/WPR002G.css" />
+	<script src="https://kit.fontawesome.com/a5993139b5.js" crossorigin="anonymous"></script>
+	<title>WPR003G|ログイン</title>
+	<script type="text/javascript">
+		var isShow = false;
+	    var isShowSubTitle = false;
+	    var isShowSubCopyTitle = false;
+	
+	    function dropDown() {
+	        if (isShow) {
+	            document.getElementById("subTitle").style.display = "none";
+	            isShow = false;
+	            isShowSubTitle = false;
+	            isShowSubCopyTitle = false;
+	        } else {
+	            document.getElementById("subTitle").style.display = "flex";
+	
+	            isShow = true
+	        }
+	    }
+	
+	    function fileUploadDrop() {
+	        if (isShowSubTitle) {
+	            document.getElementById("fileUpload").style.display = "none";
+	            isShowSubTitle = false;
+	        } else {
+	            document.getElementById("fileUpload").style.display = "flex";          
+	            isShowSubTitle = true
+	        }
+	    }
+	    function copyContactDrop() {
+	        if (isShowSubCopyTitle) {
+	            document.getElementById("copyContact").style.display = "none";
+	            isShowSubCopyTitle = false;
+	        } else {
+	            document.getElementById("copyContact").style.display = "flex";          
+	            isShowSubCopyTitle = true
+	        }
+	    }
+	
+		function login(){
+			var successFlag = true;
+			document.getElementById("ngResultDIV").style.display = "none";
+			var loginID = document.getElementById("loginID").value;
+			var password = document.getElementById("password").value;
+			if(loginID != password){
+				successFlag = false;
+			}
+			if(successFlag){
+				window.location.href="WPR003G.html";
+			}else{
+				document.getElementById("ngResultDIV").style.display = "block";
+			}
 		}
-		if(successFlag){
-			window.location.href="WPR003G.html";
-		}else{
-			document.getElementById("ngResultDIV").style.display = "block";
-		}
-	}
-</script>
+	</script>
 </head>
 <body>
-	<div class="titleDIV">
-		<h1>Web仕入受付サービス（仮）</h1>
-		<span>ログイン画面</span>
-	</div>
-	<div class="resultDIV" >
-		<div id="ngResultDIV" class="ngResultDIV">
-			ログインIDまたは、パスワードが違います。
-		</div>
-	</div>
-	<div class="mainDIV">
-		<table class="myTable">
-			<tbody>
-				<tr>
-					<td class="leftTd">ログインID</td>
-					<td><input id="loginID" type="text"></td>
-				</tr>
-				<tr>
-					<td class="leftTd">パスワード</td>
-					<td><input id="password" type="password"></td>
-				</tr>
-			</tbody>
-		</table>
-		<div class="loginButtonDIV">
-			<a href="javascript:login();" class="btn">ログイン</a>
-		</div>
-		<div class="footerDIV">
-			<a href="">パスワードを忘れてしまった方</a>
-		</div>
+	<div id="wrap">
+		<header>
+            <div class="header_title">
+                <p class="p_title">Web仕入受付サービス（仮）</p>
+                <div class="p_sub_title">
+                    <!-- <ul id="navi_bar">
+                        <li>
+                            <a class="menu_title" href="WPR003G.html">ホーム</a>
+                        </li>
+                        <li>
+                            <p class="menu_title">ファイルアップロード</p>
+                            <ul>
+                                <li><a href="WPR004G.html">アップロード・登録</a></li>
+                                <li><a href="WPR005G.html">登録ファイル閲覧</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="menu_title">部数契約</p>
+                            <ul>
+                                <li><a href="WPR006G.html">部数契約承認</a></li>
+                                <li><a href="WPR007G.html">部数契約カレンダー閲覧</a></li>
+                            </ul>
+                        </li>
+
+                    </ul> -->
+                </div>
+
+            </div>
+            <div class="right_header">
+                <!-- <div>
+                    <i class="fa-solid fa-user"></i>
+                    <span class="header_user">企業名　ID</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-key"></i>
+                    <a href="WPR001G.html" class="menu_title">パスワード変更</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <a href="WPR002G.html" class="menu_title">ログアウト</a>
+                </div> -->
+
+
+            </div>
+        </header>
+
+        <phoneHeader>
+            <div class="p_header_title">
+                <!-- <div onclick="javascript:dropDown();"><i class="fa-solid fa-bars"></i>
+                </div> -->
+                <p class="p_title">Web仕入受付サービス</p>
+                <!--  <div class="p_sub_title" id="subTitle">
+                    <div id="navi_bar">
+                        <div class="flex1">
+                            <a class="menu_title" href="WPR003G.html">ホーム</a>
+                        </div>
+                        <div class="flex2">
+                            <p class="menu_title" onclick="javascript:fileUploadDrop()">ファイルアップロード</p>
+                        </div>
+                        <div id="fileUpload" class="flex2">
+                            <div><a href="WPR004G.html">アップロード・登録</a></div>
+                            <div><a href="WPR005G.html">登録ファイル閲覧</a></div>
+                        </div>
+                        <div class="flex1" id = "copyli">
+                            <p class="menu_title" onclick="javascript:copyContactDrop()">部数契約</p>
+                        </div>
+                        <div id="copyContact" class="flex2">
+                            <div><a href="WPR006G.html">部数契約承認</a></div>
+                            <div><a href="WPR007G.html">部数契約カレンダー閲覧</a></div>
+                        </div>
+
+                    </div>
+                </div> -->
+
+            </div>
+            <div class="right_header">
+                <!-- <div class="header_sub_title">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="sub_title_span">ユーザーID</div>
+                </div>
+                <div class="header_sub_title" onclick="location.href=('WPR001G.html')">
+                    <i class="fa-solid fa-key"></i>
+                    <div class="sub_title_span">パスワード変更</div>
+                </div>
+                <div class="header_sub_title" onclick="location.href=('WPR002G.html')">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <div class="sub_title_span">ログアウト</div>
+                </div> -->
+
+
+            </div>
+        </phoneHeader>
+		<div class="container">
+        	<div class="contentDIV">
+				<div class="titleDIV">
+					<h3>ログイン画面</h3>
+				</div>
+				<div class="resultDIV" >
+					<div id="ngResultDIV" class="ngResultDIV">
+						ログインIDまたは、パスワードが違います。
+					</div>
+				</div>
+				<div class="mainDIV">
+					<table class="myTable">
+						<tbody>
+							<tr>
+								<td class="leftTd">ログインID</td>
+							</tr>
+							<tr>
+								<td><input id="loginID" type="text"></td>
+							</tr>
+							<tr></tr>
+							<tr>
+								<td class="leftTd">パスワード</td>
+							</tr>
+							<tr>
+								<td><input id="password" type="password"></td>
+							</tr>
+							<tr>
+								<td><a href="javascript:login();" class="btn">ログイン</a></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="footerDIV">
+						<a href="">パスワードを忘れてしまった方</a>
+					</div>
+				</div>
+			</div>
+        </div>
+		<footer>
+            <hr class="footer_hr">
+            <div class="footer_div">
+                Copyright&copy;2022 NIPPAN All Rights Reserved.
+            </div>
+        </footer>
+        <pfooter>
+            <div class="footer_div">
+                Copyright&copy;2022 NIPPAN All Rights Reserved.
+            </div>
+        </pfooter>
 	</div>
 </body>
 </html>
