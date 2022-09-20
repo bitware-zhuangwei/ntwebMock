@@ -1,36 +1,82 @@
-#searchArea{
-    width: 50%;
-    background-color: #F2F2F2;
-    border: #000000 1px solid;
-    display: flex;
-    flex-direction: row;
-    height: 5em;
+/*  */
+@media screen and (min-width: 0px) and (max-width:1080px) {
+    #searchArea{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 10em;
+    }
+    .searchBox{
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+        flex: 1;
+    }
+    .searchName{
+        align-self: center;
+        width: 70%;
+        font-size:var(--search-name-font-size);
+        line-height: 1.8em;
+    }
+    .searchSelect{
+        align-self: center;
+        width: 70%;
+        height:var(--input-height);
+        font-size:var(--search-name-font-size);
+        line-height: 1.8em;
+    
+    }
+    .searchBtn{
+        min-width: 100px;
+        margin-top: 1.5em;
+        margin-left: 30%;
+    }
 }
-.searchBox{
-    display: flex;
-    flex-direction: column;
-    height: 5em;
-    padding: 10px;
-    flex: 1;
-}
-.searchSelect{
-    align-self: center;
-    width: 80%;
-    height:var(--input-height);
-    font-size:var(--search-name-font-size);
-    line-height: 1.8em;
 
+
+/*  */
+@media screen and (min-width: 1080px) {
+    #searchArea{
+        width: 80%;
+        background-color: #F2F2F2;
+        border: #000000 1px solid;
+        display: flex;
+        flex-direction: row;
+        height: 5em;
+    }
+    .searchBox{
+        display: flex;
+        flex-direction: column;
+        height: 5em;
+        padding: 10px;
+        flex: 1;
+    }
+    .searchName{
+        align-self: center;
+        width: 80%;
+        font-size:var(--search-name-font-size);
+        line-height: 1.8em;
+    }
+    .searchSelect{
+        align-self: center;
+        width: 80%;
+        height:var(--input-height);
+        font-size:var(--search-name-font-size);
+        line-height: 1.8em;
+    
+    }
+    .searchBtn{
+        min-width: 100px;
+        margin-top: 0.5em;
+    }
 }
-.searchName{
-    align-self: center;
-    width: 9em;
-    font-size:var(--search-name-font-size);
-    line-height: 1.8em;
-}
-.searchBtn{
-    min-width: 100px;
-    margin-top: 0.5em;
-}
+
+
+
+
+
+
+
 .message{
     margin-top: 15px;
 }
