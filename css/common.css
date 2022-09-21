@@ -2,7 +2,7 @@
     --btn-font-size: 16px;
     --table-font-size: 16px;
     --search-name-font-size: 16px;
-    --search-name-line-height: 16px;
+    --search-name-line-height: 1.8em;
     --search-item-margin: 10px;
     --btn-height: 2em;
     --radio-font-size: 16px;
@@ -20,8 +20,8 @@
 }
 
 #wrap {
-    min-height: 100%;
-    height: 100%;
+    min-height: 99.9%;
+    height: 99.9%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@
 
 .container {
     flex: auto;
-    padding: 1em 10%;
+    padding: 0em 10%;
 }
 
 header {
@@ -58,15 +58,11 @@ phoneHeader {
 
 
 /*  */
-@media screen and (min-width: 0px) and (max-width:1080px) {
-    h1 {
-        margin: 5px 0px;
-        font-size: 24px;
-        line-height: 1.3em;
-    }
+@media screen and (min-width: 0px) and (max-width:1024px) {
     html {
         touch-action: none;
         touch-action: pan-y;
+        font-family: 'Montserrat', sans-serif;
     }
 
     header {
@@ -210,12 +206,7 @@ phoneHeader {
 }
 
 /*  */
-@media screen and (min-width: 1080px) {
-    h1 {
-        margin: 15px 0px;
-        font-size: 24px;
-        line-height: 1.3em;
-    }
+@media screen and (min-width: 1024px) {
     phoneHeader {
         display: none;
 
@@ -227,7 +218,7 @@ phoneHeader {
 
     .container {
         flex: auto;
-        padding: 1em 10%;
+        padding: 1em 5%;
     }
 
     .footer_div {
@@ -338,7 +329,7 @@ footer {
 }
 
 pfooter {
-    margin-top: 2em;
+    margin-top: 10px;
     min-height: 59px;
     height: 59px;
     line-height: 59px;
