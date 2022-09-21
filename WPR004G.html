@@ -195,36 +195,57 @@
             <h2>アップロード結果確認＆登録</h2>
             <div id="uploadResult">
             	<span>○件のファイルを登録できました。受付IDはXXXXです。</span>
-                <table>
-                    <thead>
-                        <tr>
-                        	<th class="wd1" onclick="javascript:sortFunction(1);" >No.</th>
-                            <th class="wd3" onclick="javascript:sortFunction(2);">ファイル名</th>
-                            <th class="wd3" onclick="javascript:sortFunction(3);">チェック結果</th>
-                            <th class="wd6" onclick="javascript:sortFunction(4);">エラー内容</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        	<td>1</td>
-                            <td>XX出版社_搬入連絡表.xlxs</td>
-                            <td>OK</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                        	<td>2</td>
-                            <td>XX出版社_指定データ.xlxs</td>
-                            <td>OK</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                        	<td>3</td>
-                            <td>XX出版社_指数データ.xlxs</td>
-                            <td></td>
-                            <td>未定義のエラーが発生しました。</td>
-                        </tr>
-                    </tbody>
-                </table>
+            	<div id="detail-table">
+            		<table>
+	                    <thead>
+	                        <tr>
+	                        	<th class="wd1" onclick="javascript:sortFunction(1);" >No.</th>
+	                            <th class="wd3" onclick="javascript:sortFunction(2);">ファイル名</th>
+	                            <th class="wd3" onclick="javascript:sortFunction(3);">チェック結果</th>
+	                            <th class="wd6" onclick="javascript:sortFunction(4);">エラー内容</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                        <tr>
+	                        	<td>1</td>
+	                            <td>XX出版社_搬入連絡表.xlxs</td>
+	                            <td>OK</td>
+	                            <td></td>
+	                        </tr>
+	                        <tr>
+	                        	<td>2</td>
+	                            <td>XX出版社_指定データ.xlxs</td>
+	                            <td>OK</td>
+	                            <td></td>
+	                        </tr>
+	                        <tr>
+	                        	<td>3</td>
+	                            <td>XX出版社_指数データ.xlxs</td>
+	                            <td></td>
+	                            <td>未定義のエラーが発生しました。</td>
+	                        </tr>
+	                        <tr>
+	                        	<td>1</td>
+	                            <td>XX出版社_搬入連絡表.xlxs</td>
+	                            <td>OK</td>
+	                            <td></td>
+	                        </tr>
+	                        <tr>
+	                        	<td>2</td>
+	                            <td>XX出版社_指定データ.xlxs</td>
+	                            <td>OK</td>
+	                            <td></td>
+	                        </tr>
+	                        <tr>
+	                        	<td>3</td>
+	                            <td>XX出版社_指数データ.xlxs</td>
+	                            <td></td>
+	                            <td>未定義のエラーが発生しました。</td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+            	</div>
+                
                 <div id="buttonArea">
                     <button id="resultClear" class="btn submitBtn" onclick='location.href=("WPR004G.html")'>アップロード結果をクリア</button>
                     <button id="fileInsert" class="btn submitBtn" onclick='location.href=("WPR005G.html")'>ファイルを登録</button>
@@ -232,37 +253,67 @@
             </div>
             <div id="uploadResultPhone">
             	<span>○件ＯＫです。受付IDはXXXXです</span>
-                <table>
-                    <tbody>
-                        <tr>
-                        	<td class="wd1">
-                        		<p>OK</p>
-                        	</td>
-                        	<td class="wd3">
-                        		<p>XX出版社_搬入連絡表.xlxs</p>
-                        		<p></p>
-                        	</td>
-                        </tr>
-                        <tr>
-                        	<td class="wd1">
-                        		<p>OK</p>
-                        	</td>
-                        	<td class="wd3">
-                        		<p>XX出版社_搬入連絡表.xlxs</p>
-                        		<p></p>
-                        	</td>
-                        </tr>
-                        <tr>
-                        	<td class="wd1 redFont">
-                        		<p>NG</p>
-                        	</td>
-                        	<td class="wd3">
-                        		<p>XX出版社_指定データ.xlxs</p>
-                        		<p class="redFont">未定義のエラーが発生しました。</p>
-                        	</td>
-                        </tr>
-                    </tbody>
-                </table>
+            	<div id="detail-table">
+            		<table>
+	                    <tbody>
+	                        <tr>
+	                        	<td class="wd1">
+	                        		<p>OK</p>
+	                        	</td>
+	                        	<td class="wd3">
+	                        		<p>XX出版社_搬入連絡表.xlxs</p>
+	                        		<p></p>
+	                        	</td>
+	                        </tr>
+	                        <tr>
+	                        	<td class="wd1">
+	                        		<p>OK</p>
+	                        	</td>
+	                        	<td class="wd3">
+	                        		<p>XX出版社_搬入連絡表.xlxs</p>
+	                        		<p></p>
+	                        	</td>
+	                        </tr>
+	                        <tr>
+	                        	<td class="wd1 redFont">
+	                        		<p>NG</p>
+	                        	</td>
+	                        	<td class="wd3">
+	                        		<p>XX出版社_指定データ.xlxs</p>
+	                        		<p class="redFont">未定義のエラーが発生しました。</p>
+	                        	</td>
+	                        </tr>
+	                        <tr>
+	                        	<td class="wd1">
+	                        		<p>OK</p>
+	                        	</td>
+	                        	<td class="wd3">
+	                        		<p>XX出版社_搬入連絡表.xlxs</p>
+	                        		<p></p>
+	                        	</td>
+	                        </tr>
+	                        <tr>
+	                        	<td class="wd1">
+	                        		<p>OK</p>
+	                        	</td>
+	                        	<td class="wd3">
+	                        		<p>XX出版社_搬入連絡表.xlxs</p>
+	                        		<p></p>
+	                        	</td>
+	                        </tr>
+	                        <tr>
+	                        	<td class="wd1 redFont">
+	                        		<p>NG</p>
+	                        	</td>
+	                        	<td class="wd3">
+	                        		<p>XX出版社_指定データ.xlxs</p>
+	                        		<p class="redFont">未定義のエラーが発生しました。</p>
+	                        	</td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+            	</div>
+                
                 <div id="buttonArea">
 	                <p><button id="resultClear" class="btn submitBtn" onclick='location.href=("WPR004G.html")'>アップロード結果をクリア</button></p>
 	                <p><button id="fileInsert" class="btn submitBtn" onclick='location.href=("WPR005G.html")'>ファイルを登録</button></p>
