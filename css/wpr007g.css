@@ -142,12 +142,13 @@ tr {
 }
 
 th {
-    background: #D9E1F2;
+    background-color:var(--table-header-background);
     border-left: 1px solid #000000;
     border-right: 1px solid #000000;
     top: 0;
     left: 0;
     position: sticky;
+    color: #ffffff;
 
 }
 

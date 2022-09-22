@@ -107,7 +107,7 @@ tr{
     height: var(--tr-height);
 }
 th{
-    background:#B5BEE7;
+    background:var(--table-header-background);
     border: 1px solid #000000;
     text-align: left;
     padding: 2.5px var(--table-padding);

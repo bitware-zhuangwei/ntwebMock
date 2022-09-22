@@ -231,17 +231,19 @@
   }
 
   .tableHeader {
-    background-color: #d9e1f2;
+    
     font-size: var(--table-font-size);
     font-weight: bold;
   }
+
 
   .tableHeader tr td {
     top: 0;
     border-right: 1px solid black;
     border-left: 1px solid black;
     position: sticky;
-    background-color: #d9e1f2;
+    background-color:var(--table-header-background);
+    color: #ffffff;
   }
 
 

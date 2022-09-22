@@ -11,6 +11,7 @@
     --input-height: 1.6em;
     --input-font-size: 16px;
     --table-padding: 6px;
+    --table-header-background:#B5BEE7;
 }
 
 * {
@@ -230,8 +231,10 @@ phoneHeader {
         height: 100%;
         text-align: center;
         display: flex;
-        width: 60%;
+        width: 40%;
         margin-top: 1em;
+        float: right;
+        margin-right: 10%;
     }
 
     .p_title {
