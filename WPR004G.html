@@ -196,14 +196,41 @@
             <div id="uploadResult">
             	<span>○件のファイルを登録できました。受付IDはXXXXです。</span>
             	<div id="detail-table">
-            		<table>
-	                    <thead>
+            		<table class="infoTable">
+	                    <thead class="tableHeader">
+	                        <!-- <tr>
+	                        	<td class="wd1" onclick="javascript:sortFunction(1);" ><div class=" scrBorder">No.</div></td>
+	                            <td class="wd3" onclick="javascript:sortFunction(2);"><div class=" scrBorder">ファイル名</div></td>
+	                            <td class="wd3" onclick="javascript:sortFunction(3);"><div class=" scrBorder">チェック結果</div></td>
+	                            <td class="wd6" onclick="javascript:sortFunction(4);"><div class=" scrBorder">エラー内容</div></td>
+	                        </tr> -->
+	                        
 	                        <tr>
-	                        	<th class="wd1" onclick="javascript:sortFunction(1);" >No.</th>
-	                            <th class="wd3" onclick="javascript:sortFunction(2);">ファイル名</th>
-	                            <th class="wd3" onclick="javascript:sortFunction(3);">チェック結果</th>
-	                            <th class="wd6" onclick="javascript:sortFunction(4);">エラー内容</th>
-	                        </tr>
+				                <td class="wd1">
+				                  <div class="td_div_flex scrBorder">
+				                    <div class="div-inlin">No.</div>
+				                    <!-- <div class="flex_5"><button class="sortButton">▼</button></div> -->
+				                  </div>
+				                </td>
+				                <td class="wd3">
+				                  <div class="td_div_flex scrBorder">
+				                    <div class="div-inlin">ファイル名</div>
+				                    <!-- <div class="flex_5"><button class="sortButton">▼</button></div> -->
+				                  </div>
+				                </td >
+				                <td class="wd3">
+				                  <div class="td_div_flex scrBorder">
+				                    <div class="div-inlin">チェック結果</div>
+				                    <!-- <div class="flex_5"><button class="sortButton">▼</button></div> -->
+				                  </div>
+				                </td>
+				                <td class="wd6">
+				                  <div class="td_div_flex scrBorder">
+				                    <div class="div-inlin">エラー内容</div>
+				                    <!-- <div class="flex_5"><button class="sortButton">▼</button></div> -->
+				                  </div>
+				                </td>
+				              </tr>
 	                    </thead>
 	                    <tbody>
 	                        <tr>

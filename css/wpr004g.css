@@ -97,10 +97,7 @@
 input{
     margin-top: 10px;
 }
-#detail-table {
-    height: 150px;
-    overflow-y: scroll;
-}
+
 table{
     border-collapse:collapse;
     border-spacing: 0;
@@ -117,10 +114,6 @@ th{
     color : white;
     cursor: pointer;
 
-}
-td{
-    border: 1px solid #000000;
-    padding: 2.5px var(--table-padding);
 }
 
 .redFont{
@@ -147,4 +140,61 @@ footer {
     overflow: hidden; 
     position: absolute; 
     z-index: -1;
+}
+
+.tableHeader {
+  background-color: #d9e1f2;
+  font-size: var(--table-font-size);
+  font-weight: bold;
+}
+
+.tableHeader tr td {
+  top: 0;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  position: sticky;
+  background-color: #d9e1f2;
+}
+
+.infoTable {
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: collapse;
+  padding: 0px;
+  margin: 0px 0px 0px 10px;
+  font-size: var(--table-font-size);
+}
+
+.infoTable tbody tr td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 2.5px   var(--table-padding);
+  text-align: center;
+}
+
+#detail-table {
+  height: 150px;
+  overflow-y: scroll;
+  min-height: 150px;
+  min-width: 750px;
+}
+
+.scrBorder {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.td_div_flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--tr-height);
+
+}
+
+.scrBorder {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }

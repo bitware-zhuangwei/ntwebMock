@@ -1,0 +1,404 @@
+@media screen and (min-width: 0px) and (max-width:1080px) {
+	#searchDIV{
+		display: none;
+	}
+	
+	#phoneHeadSearchDIV{
+		margin-left: 15px;
+	}
+	
+	#phoneHeadSearchDIV select{
+		 width: 60%;
+	}
+	
+	.button-area-phone  {
+	  text-align: center;
+	  margin: 30px 0px 10px 0px;
+	}
+	
+	.button-area-phone button {
+	  min-width: 300px;
+	}
+	
+	
+	#phoneHeadSearchDIV .allCheckbox{
+		 margin-right: 10px;
+	}
+	
+	.infoTable_phone td{
+		 width: 100%;
+	}
+	
+	.infoTable_phone .wd1{
+		 width: 35px;
+	}
+	
+	.iphone_icon{
+	    float:right;
+	}
+	
+  
+.selectTable {
+    display: none;
+
+  }
+  .infoTable{
+    display: none;
+  }
+
+ 
+
+  .selectTable_phone {
+    font-size: var(--search-name-font-size);
+    line-height: var(--search-name-line-height);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .search_div {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    line-height: var(--search-name-line-height);
+    margin: 0 1em;
+
+  }
+  .iphone_icon{
+    float:right;
+  }
+
+  .searchSelect {
+    width: 80%;
+
+}
+.search_show{
+  display: none;
+}
+
+  .flex_row{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    line-height: var(--search-name-line-height);
+    margin: 0 1em;
+    }
+
+  #detail-div {
+    display: none;
+  }
+
+  .searchButton {
+    min-width: 300px;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: var(--margin);
+    line-height: var(--search-name-line-height);
+  }
+
+  .infoTable_phone {
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+    padding: 10px;
+    width: 98%;
+    min-width: 98%;
+    font-size: var(--table-font-size);
+    display: block;
+    height: 25em;
+    min-height: 25em;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  .infoTable_phone tbody {
+    display: block;
+    min-height: 25em;
+    height: 25em;
+
+    overflow-y: scroll;
+  }
+
+
+  .infoTable_phone tbody tr td {
+    border: 1px solid black;
+    padding: 2.5px var(--table-padding);
+
+  }
+
+  .message {
+    margin: 15px 15px 0px 15px;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  .phone_message {
+    margin: 15px 15px 0px 15px;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .popup {
+    margin: 25% 30px 30px 30px;
+    padding: 10px;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    width: 85%;
+    height: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .popup .close:hover {
+    color: #06D85F;
+  }
+
+  .popup .content {
+    min-height: 100%;
+    overflow: auto;
+  }
+
+  .name {
+    padding: 2px 5px 2px 10px;
+  }
+
+  .infoInput{
+    width: 100%;
+  }
+  
+  
+}
+
+
+
+
+
+@media screen and (min-width: 1080px) {
+	.button-area {
+	  margin: 10px 0px 10px 0px;
+	  text-align: right;
+	}
+
+	.button-area button {
+	  min-width: 65px;
+	}
+	.phone_icon {
+	    display: none;
+	}
+	
+	.button-area-phone {
+	  display: none;
+	}
+	
+	#phoneHeadSearchDIV {
+	    display: none;
+	}
+	
+	.searchButton {
+		margin-top: 20px;
+	    margin-bottom: 20px;
+		min-width: 180px;
+	}
+	
+	.phone_search{
+	    display: none;
+	  }
+	
+	  .infoTable_phone{
+	    display: none;
+	  }
+	
+	  .overlay{
+	    display: none;
+	  }
+	    .phone_icon {
+	    display: none;
+	  }
+	  
+}
+
+.selectTable {
+  width: 95%;
+  min-width: 750px;
+  font-size: var(--search-name-font-size);
+  line-height: var(--search-name-line-height);
+  border: 2px solid #7F7F7F;
+  background-color: #F2F2F2;
+}
+
+.selectTable tr .radioType {
+  font-size: var(--radio-font-size);
+}
+
+.radioCheck {
+  margin: 0px 0px 10px 30px;
+}
+
+.radioType input[type="radio"]:checked {
+  accent-color: black;
+}
+.dateInput {
+  border: 1px solid black;
+  height: var(--input-height);
+  width: 7em;
+}
+
+.name {
+  width: 280px;
+  min-width: 280px;
+  padding: 5px 5px 8px 20px;
+}
+
+#detail-div {
+  width: 97%;
+}
+
+#detail-table {
+  height: 240px;
+  overflow-y: scroll;
+  min-height: 60px;
+  min-width: 750px;
+}
+
+.tableHeader {
+  background-color: #d9e1f2;
+  font-size: var(--table-font-size);
+  font-weight: bold;
+}
+
+.tableHeader tr td {
+  top: 0;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  position: sticky;
+  background-color: #d9e1f2;
+}
+
+.infoTable {
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: collapse;
+  padding: 0px;
+  margin: 0px 0px 0px 10px;
+  width: calc(100% - 0.84em);
+  min-width: calc(100% - 0.84em);
+  font-size: var(--table-font-size);
+}
+
+.infoTable tbody tr td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 250px;
+  padding: 2.5px   var(--table-padding);
+  text-align: center;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.td_div_flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--tr-height);
+}
+
+.scrBorder {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 30px;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.flex_left {
+  width: 50%;
+  padding-left: var(--table-padding);
+
+}
+
+.flex_right {
+  width: 50%;
+  text-align: right;
+}
+
+.div-inlin {
+  width: 40%;
+  padding-left: var(--table-padding);
+
+}
+
+.flex_5 {
+  width: 40%;
+  text-align: right;
+}
+
+.sortButton {
+  width: 20px;
+  border: 0px;
+  border-left: 1px solid black;
+  margin: 0px;
+  padding: 0px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #d9e1f2;
+}
+
+.allCheckbox {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 30px;
+  padding: 0px;
+  margin: 5px 0px 0px 0px;
+}
+
+footer {
+  margin-top: 0em;
+}
+.container{
+  padding-bottom: 0px;
+}
+
