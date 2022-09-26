@@ -12,6 +12,8 @@
     --input-font-size: 16px;
     --table-padding: 6px;
     --table-header-background:#B5BEE7;
+    --sub-header-background:#9DC3E6;
+    --footer-font-size:14px;
 }
 
 * {
@@ -58,8 +60,10 @@ phoneHeader {
 
 
 
+
+
 /*  */
-@media screen and (min-width: 0px) and (max-width:1024px) {
+@media screen and (min-width: 0px) and (max-width:991px) {
     html {
         touch-action: none;
         touch-action: pan-y;
@@ -82,7 +86,7 @@ phoneHeader {
     .footer_div {
         margin-left: 18%;
         color: black;
-        font-size: 14px;
+        font-size: var(--btn-font-size);
         width: 90%;
     }
 
@@ -119,26 +123,50 @@ phoneHeader {
     }
 
     .p_sub_title {
-        width: 96%;
-        display: none;
-        margin-top: 2.3em;
+        height: 2em;
+        width: 100%;
+        display: flex;
+        margin-top: 0;
         background-color: #003399;
         /* flex-direction: column; */
-        z-index: 101;
-        position: absolute;
+        /* z-index: 101; */
+        /* position: absolute; */
     }
+
+    subHeader{
+        height: 2em;
+        min-height: 2em;
+        padding: 0em;
+        margin-bottom: 0%;
+        margin-top: 0.1em;
+        line-height: 0.1em;
+        background: #003399;
+        color: white;
+        display: flex;
+        text-align: center;
+
+    }
+    .subTitle_30{
+        flex: 25%;
+    }
+    .subTitle_40{
+        flex: 50%;
+    }
+
+
+   
 
     #navi_bar {
         display: flex;
         /* margin-top: 1em; */
         list-style: none;
-        font-size: 16px;
-        flex-direction: column;
+        font-size: var(--input-font-size);
+        flex-direction: row;
         width: 100%;
     }
 
     #navi_bar div {
-        flex: 1;
+        /* flex: 1; */
         border: #ffffff 1px solid;
         text-align: left;
         line-height: 2em;
@@ -160,13 +188,17 @@ phoneHeader {
     }
 
     #fileUpload {
-        width: 100%;
+        width: 96%;
+        margin-top: 2em;
+        margin-left: 2%;
         text-align: left;
         background-color: #ffffff;
         display: none;
         flex-direction: column;
         list-style: none;
         color: #000000;
+        position: absolute;
+
 
     }
 
@@ -180,15 +212,20 @@ phoneHeader {
         margin-left: 1em;
         color: #000000;
         font-weight: bold;
+        text-decoration: none;
     }
     #copyContact {
-        width:100%;
+        width:96%;
+        margin-left: 2%;
+        margin-top: 2em;
         display: none;
         text-align: left;
         background-color: #ffffff;
         flex-direction: column;
         list-style: none;
         color: #000000;
+        position: absolute;
+
 
     }
 
@@ -203,11 +240,19 @@ phoneHeader {
         margin-left: 1em;
         color: #000000;
         font-weight: bold;
+        text-decoration: none;
+
+    }
+    .sub_header_div{
+        background-color: var(--sub-header-background);
+        color: #ffffff;
+        padding-left: 10px;
+
     }
 }
 
 /*  */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
     phoneHeader {
         display: none;
 
@@ -246,7 +291,7 @@ phoneHeader {
     .p_sub_title {
         margin-top: 2em;
         margin-left: 2em;
-        font-size: 1em;
+        font-size: var(--input-font-size);
     }
 
     #navi_bar {
@@ -319,6 +364,17 @@ phoneHeader {
         margin-left: 1em;
     }
 
+    subHeader{
+        display: none;
+    }
+
+    #fileUpload{
+        display: none;
+    }
+    #copyContact{
+        display: none;
+    }
+
 }
 
 footer {
@@ -369,7 +425,7 @@ pfooter {
 
 .header_user {
     width: 50%;
-    font-size: 1em;
+    font-size: var(--input-font-size);
     margin-right: 0.5em;
     vertical-align: middle;
 

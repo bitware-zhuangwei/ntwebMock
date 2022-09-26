@@ -1,5 +1,5 @@
 /*  */
-@media screen and (min-width: 0px) and (max-width:1080px) {
+@media screen and (min-width: 0px) and (max-width:991px) {
     #searchArea {
         width: 100%;
         display: flex;
@@ -55,7 +55,7 @@
 
 
 /*  */
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 992px) {
     #searchArea {
         width: 80%;
         background-color: #F2F2F2;

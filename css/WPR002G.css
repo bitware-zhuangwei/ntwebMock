@@ -1,4 +1,4 @@
-@media screen and (min-width: 0px) and (max-width:992px) {
+@media screen and (min-width: 0px) and (max-width:991px) {
 	.contentDIV{
 		width: 100%;
 	}
@@ -11,7 +11,7 @@
 }
 
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 992px) {
 	.contentDIV{
 		width: 600px;
 		margin: auto;
@@ -48,7 +48,7 @@
     color: red;
     display: none;
     margin-left: 6%;
-    font-size: 13px;
+    font-size: var(--table-font-size);
 }
 
 .mainDIV
@@ -88,7 +88,7 @@
 
 .footerDIV
 {
-	font-size: 18px;
+	font-size: var(--table-font-size);
 	margin-top: 25px;
 }
 

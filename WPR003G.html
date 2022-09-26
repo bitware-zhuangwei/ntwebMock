@@ -12,30 +12,32 @@
 </head>
 
 <script>
-    var isShow = false;
+    // var isShow = false;
     var isShowSubTitle = false;
     var isShowSubCopyTitle = false;
 
-    function dropDown() {
-        if (isShow) {
-            document.getElementById("subTitle").style.display = "none";
-            isShow = false;
-            isShowSubTitle = false;
-            isShowSubCopyTitle = false;
-        } else {
-            document.getElementById("subTitle").style.display = "flex";
+    // function dropDown() {
+    //     if (isShow) {
+    //         document.getElementById("subTitle").style.display = "none";
+    //         isShow = false;
+    //         isShowSubTitle = false;
+    //         isShowSubCopyTitle = false;
+    //     } else {
+    //         document.getElementById("subTitle").style.display = "flex";
 
-            isShow = true
-        }
-    }
+    //         isShow = true
+    //     }
+    // }
 
     function fileUploadDrop() {
         if (isShowSubTitle) {
             document.getElementById("fileUpload").style.display = "none";
             isShowSubTitle = false;
         } else {
-            document.getElementById("fileUpload").style.display = "flex";          
-            isShowSubTitle = true
+            document.getElementById("fileUpload").style.display = "flex";
+            isShowSubTitle = true;
+            document.getElementById("copyContact").style.display = "none";
+            isShowSubCopyTitle = false;
         }
     }
     function copyContactDrop() {
@@ -43,8 +45,10 @@
             document.getElementById("copyContact").style.display = "none";
             isShowSubCopyTitle = false;
         } else {
-            document.getElementById("copyContact").style.display = "flex";          
-            isShowSubCopyTitle = true
+            document.getElementById("copyContact").style.display = "flex";
+            isShowSubCopyTitle = true;
+            document.getElementById("fileUpload").style.display = "none";
+            isShowSubTitle = false;
         }
     }
 
@@ -100,10 +104,13 @@
 
         <phoneHeader>
             <div class="p_header_title">
-                <div onclick="javascript:dropDown();"><i class="fa-solid fa-bars"></i>
-                </div>
+                <!-- <div onclick="javascript:dropDown();"><i class="fa-solid fa-bars"></i> -->
+                <!-- </div> -->
                 <p class="p_title">Web仕入受付サービス</p>
-                <div class="p_sub_title" id="subTitle">
+
+
+
+                <!-- <div class="p_sub_title" id="subTitle">
                     <div id="navi_bar">
                         <div class="flex1">
                             <a class="menu_title" href="WPR003G.html">ホーム</a>
@@ -124,7 +131,7 @@
                         </div>
 
                     </div>
-                </div>
+                </div> -->
 
             </div>
             <div class="right_header">
@@ -143,7 +150,39 @@
 
 
             </div>
+
         </phoneHeader>
+        <subHeader>
+            <div class="p_sub_title" id="subTitle">
+                <div id="navi_bar">
+                    <div class="subTitle_30">
+                        <a class="menu_title" href="WPR003G.html">ホーム</a>
+                    </div>
+                    <div class="subTitle_40">
+                        <p class="menu_title" onclick="javascript:fileUploadDrop()">ファイルアップロード</p>
+
+                    </div>
+                    <div class="subTitle_30" id="copyli">
+                        <p class="menu_title" onclick="javascript:copyContactDrop()">部数契約</p>
+
+                    </div>
+                </div>
+                <div id="fileUpload" class="flex2">
+                    <div class="sub_header_div">ファイルアップロード</div>
+                    <div><a href="WPR004G.html">アップロード・登録</a></div>
+                    <div><a href="WPR005G.html">登録ファイル閲覧</a></div>
+                </div>
+                <div id="copyContact" class="flex2">
+                    <div class="sub_header_div">部数契約</div>
+                    <div><a href="WPR006G.html">部数契約承認</a></div>
+                    <div><a href="WPR007G.html">部数契約カレンダー閲覧</a></div>
+                </div>
+
+
+            </div>
+
+        </subHeader>
+
 
         <div class="container">
             <h1>お知らせ</h1>
@@ -492,11 +531,14 @@
                         <td>
                             <p>お知らせ種類1</p>
                         </td>
-                        
+
                     </tr>
-                    <tr><td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -507,11 +549,13 @@
                         <td>
                             <p>お知らせ種類2</p>
                         </td>
-                       
+
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -523,9 +567,11 @@
                             <p>お知らせ種類3</p>
                         </td>
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -537,9 +583,11 @@
                             <p>お知らせ種類4</p>
                         </td>
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -551,9 +599,11 @@
                             <p>お知らせ種類5</p>
                         </td>
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -565,9 +615,11 @@
                             <p>お知らせ種類6</p>
                         </td>
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -579,9 +631,11 @@
                             <p>お知らせ種類7</p>
                         </td>
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -593,9 +647,11 @@
                             <p>お知らせ種類8</p>
                         </td>
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -607,9 +663,11 @@
                             <p>お知らせ種類9</p>
                         </td>
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -621,9 +679,11 @@
                             <p>お知らせ種類10</p>
                         </td>
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -635,9 +695,11 @@
                             <p>お知らせ種類11</p>
                         </td>
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -649,9 +711,11 @@
                             <p>お知らせ種類12</p>
                         </td>
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -663,9 +727,11 @@
                             <p>お知らせ種類13</p>
                         </td>
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -677,9 +743,11 @@
                             <p>お知らせ種類14</p>
                         </td>
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -691,9 +759,11 @@
                             <p>お知らせ種類15</p>
                         </td>
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -705,9 +775,11 @@
                             <p>お知らせ種類16</p>
                         </td>
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -719,9 +791,11 @@
                             <p>お知らせ種類17</p>
                         </td>
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -733,9 +807,11 @@
                             <p>お知らせ種類18</p>
                         </td>
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -747,9 +823,11 @@
                             <p>お知らせ種類19</p>
                         </td>
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -761,9 +839,11 @@
                             <p>お知らせ種類20</p>
                         </td>
                     </tr>
-                    <tr> <td colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                     <tr>
@@ -775,9 +855,11 @@
                             <p>お知らせ種類21</p>
                         </td>
                     </tr>
-                    <tr> <td  colspan="2">お知らせタイトル</td></tr>
                     <tr>
-                        <td  colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        <td colspan="2">お知らせタイトル</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
                         </td>
                     </tr>
                 </tbody>

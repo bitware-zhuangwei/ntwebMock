@@ -1,118 +1,106 @@
-@media screen and (min-width: 0px) and (max-width:992px) {
-	.contentDIV{
+@media screen and (min-width: 0px) and (max-width:991px) {
+	.contentDIV {
 		width: 100%;
 	}
 
-	.myTable
-	{
+	.myTable {
 		width: 90%;
 		font-size: var(--table-font-size);
 	}
 }
 
 
-@media screen and (min-width: 1080px) {
-	.contentDIV{
+@media screen and (min-width: 992px) {
+	.contentDIV {
 		width: 600px;
 		margin: auto;
 		margin-top: 10px;
 		margin-left: 15%;
-	}	
-	
-	.myTable
-	{
+	}
+
+	.myTable {
 		width: 50%;
 		font-size: var(--table-font-size);
 	}
 }
-.container{
-    overflow: auto;
+
+.container {
+	overflow: auto;
 }
 
-.titleDIV
-{
-	width:90%;
+.titleDIV {
+	width: 90%;
 	height: 30px;
 	margin: auto;
 }
 
-.resultDIV
-{
-	width:85%;
+.resultDIV {
+	width: 85%;
 	margin-left: 10px;
 	margin-top: 15px;
-    margin-bottom: 15px;
-    height: 20px;
+	margin-bottom: 15px;
+	height: 20px;
 }
 
-.ngResultDIV
-{
-    font-weight: bold;
-    color: red;
-    display: none;
-    margin-left: 6%;
-    font-size: 13px;
+.ngResultDIV {
+	font-weight: bold;
+	color: red;
+	display: none;
+	margin-left: 6%;
+	font-size: var(--input-font-size);
+
 }
 
 
-.successResultDIV
-{
-    font-weight: bold;
-    display: none;
+.successResultDIV {
+	font-weight: bold;
+	display: none;
 }
 
-.mainDIV
-{
+.mainDIV {
 	width: 85%;
 	max-width: 85%;
 	margin: auto;
 }
 
-.redSpan
-{
+.redSpan {
 	color: red;
-	font-size: 12px;
+	font-size: var(--input-font-size);
 }
 
-.myTable tr
-{
+.myTable tr {
 	height: 20px;
 }
 
 
-.myTable td input
-{
+.myTable td input {
 	border: 1px solid #000000;
 	width: 96%;
 	height: 100%;
 	margin-top: 5px;
 }
 
-.henkoButtonDIV
-{
+.henkoButtonDIV {
 	width: 100%;
 	margin: auto;
 	text-align: right;
 	margin-top: 15px;
 }
 
-.loginBtn
-{
+.loginBtn {
 	width: 95%;
 	color: white;
 	background-color: #003399;
 	margin-top: 25px;
 }
 
-.footerDIV
-{
+.footerDIV {
 	width: 85%;
 	margin: auto;
-	font-size: 14px;
+	font-size: var(--input-font-size);
 	margin-top: 20px;
 }
 
-.footerDIV p
-{
+.footerDIV p {
 	margin: 2px;
 }

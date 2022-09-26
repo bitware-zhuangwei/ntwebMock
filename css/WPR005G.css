@@ -1,5 +1,5 @@
 /*  */
-@media screen and (min-width: 0px) and (max-width:1080px) {
+@media screen and (min-width: 0px) and (max-width:991px) {
   .selectTable {
     display: none;
 
@@ -132,17 +132,6 @@
     font-family: Tahoma, Arial, sans-serif;
   }
 
-  .popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-  }
-
   .popup .close:hover {
     color: #06D85F;
   }
@@ -161,13 +150,8 @@
   }
 }
 
-
-
-
-
-
 /*  */
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 992px) {
   .selectTable {
     font-size: var(--search-name-font-size);
     line-height: var(--search-name-line-height);
