@@ -27,6 +27,19 @@
 	    width: 20em;
 	}
 	
+	#detail-table {
+	  height: 150px;
+	  overflow-y: scroll;
+	  min-height: 150px;
+	  min-width: 150px;
+	}
+	
+	.infoTable tbody tr td {
+	  border: 1px solid black;
+	  padding: 2.5px   var(--table-padding);
+	  text-align: center;
+	}
+	
 	#buttonArea{
 	    justify-content: end;
 	}
@@ -44,6 +57,10 @@
 
 
 @media screen and (min-width: 992px) {
+	.container{
+	    overflow: auto;
+	}
+	
 	#uploadFileListPhone{
 		display: none;
 	}
@@ -69,6 +86,21 @@
 	    justify-content: end;
 	}
 	
+	#detail-table {
+	  height: 150px;
+	  overflow-y: scroll;
+	  min-height: 150px;
+	  min-width: 750px;
+	}
+	
+	.infoTable tbody tr td {
+	  border-left: 1px solid black;
+	  border-right: 1px solid black;
+	  border-bottom: 1px solid black;
+	  padding: 2.5px   var(--table-padding);
+	  text-align: center;
+	}
+	
 	.wd1{
     	width: 50px;
 	}
@@ -78,9 +110,6 @@
 	.wd6{
 	    width: 640px;
 	}
-}
-.container{
-    overflow: auto;
 }
 
 .uploadArea{
@@ -163,21 +192,6 @@ footer {
   padding: 0px;
   margin: 0px 0px 0px 10px;
   font-size: var(--table-font-size);
-}
-
-.infoTable tbody tr td {
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
-  padding: 2.5px   var(--table-padding);
-  text-align: center;
-}
-
-#detail-table {
-  height: 150px;
-  overflow-y: scroll;
-  min-height: 150px;
-  min-width: 750px;
 }
 
 .scrBorder {
