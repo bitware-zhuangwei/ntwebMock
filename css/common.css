@@ -86,7 +86,7 @@ phoneHeader {
     .footer_div {
         margin-left: 18%;
         color: black;
-        font-size: var(--btn-font-size);
+        font-size: var(--footer-font-size);
         width: 90%;
     }
 

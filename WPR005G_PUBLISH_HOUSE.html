@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/WPR005G_PUBLISH_HOUSE.css" />
+  <script src="https://kit.fontawesome.com/a5993139b5.js" crossorigin="anonymous"></script>
+  <title>WPR005G|登録ファイル閲覧</title>
+</head>
+<script>
+  // var isShow = false;
+  var isShowSubTitle = false;
+  var isShowSubCopyTitle = false;
+
+  // function dropDown() {
+  //     if (isShow) {
+  //         document.getElementById("subTitle").style.display = "none";
+  //         isShow = false;
+  //         isShowSubTitle = false;
+  //         isShowSubCopyTitle = false;
+  //     } else {
+  //         document.getElementById("subTitle").style.display = "flex";
+
+  //         isShow = true
+  //     }
+  // }
+
+  function fileUploadDrop() {
+      if (isShowSubTitle) {
+          document.getElementById("fileUpload").style.display = "none";
+          isShowSubTitle = false;
+      } else {
+          document.getElementById("fileUpload").style.display = "flex";
+          isShowSubTitle = true;
+          document.getElementById("copyContact").style.display = "none";
+          isShowSubCopyTitle = false;
+      }
+  }
+  function copyContactDrop() {
+      if (isShowSubCopyTitle) {
+          document.getElementById("copyContact").style.display = "none";
+          isShowSubCopyTitle = false;
+      } else {
+          document.getElementById("copyContact").style.display = "flex";
+          isShowSubCopyTitle = true;
+          document.getElementById("fileUpload").style.display = "none";
+          isShowSubTitle = false;
+      }
+  }
+
+
+</script>
+
+<body>
+  <div id="wrap">
+      <header>
+          <div class="header_title">
+              <p class="p_title">Web仕入受付サービス（仮）</p>
+              <div class="p_sub_title">
+                  <ul id="navi_bar">
+                      <li>
+                          <a class="menu_title" href="WPR003G.html">ホーム</a>
+                      </li>
+                      <li>
+                          <p class="menu_title">ファイルアップロード</p>
+                          <ul>
+                              <li><a href="WPR004G.html">アップロード・登録</a></li>
+                              <li><a href="WPR005G.html">登録ファイル閲覧</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <p class="menu_title">部数契約</p>
+                          <ul>
+                              <li><a href="WPR006G.html">部数契約承認</a></li>
+                              <li><a href="WPR007G.html">部数契約カレンダー閲覧</a></li>
+                          </ul>
+                      </li>
+
+                  </ul>
+              </div>
+
+          </div>
+          <div class="right_header">
+              <div>
+                  <i class="fa-solid fa-user"></i>
+                  <span class="header_user">企業名　ID</span>
+              </div>
+              <div>
+                  <i class="fa-solid fa-key"></i>
+                  <a href="WPR001G.html" class="menu_title">パスワード変更</a>
+              </div>
+              <div>
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                  <a href="WPR002G.html" class="menu_title">ログアウト</a>
+              </div>
+
+
+          </div>
+      </header>
+
+      <phoneHeader>
+          <div class="p_header_title">
+              <!-- <div onclick="javascript:dropDown();"><i class="fa-solid fa-bars"></i> -->
+              <!-- </div> -->
+              <p class="p_title">Web仕入受付サービス</p>
+
+
+
+              <!-- <div class="p_sub_title" id="subTitle">
+                  <div id="navi_bar">
+                      <div class="flex1">
+                          <a class="menu_title" href="WPR003G.html">ホーム</a>
+                      </div>
+                      <div class="flex2">
+                          <p class="menu_title" onclick="javascript:fileUploadDrop()">ファイルアップロード</p>
+                      </div>
+                      <div id="fileUpload" class="flex2">
+                          <div><a href="WPR004G.html">アップロード・登録</a></div>
+                          <div><a href="WPR005G.html">登録ファイル閲覧</a></div>
+                      </div>
+                      <div class="flex1" id = "copyli">
+                          <p class="menu_title" onclick="javascript:copyContactDrop()">部数契約</p>
+                      </div>
+                      <div id="copyContact" class="flex2">
+                          <div><a href="WPR006G.html">部数契約承認</a></div>
+                          <div><a href="WPR007G.html">部数契約カレンダー閲覧</a></div>
+                      </div>
+
+                  </div>
+              </div> -->
+
+          </div>
+          <div class="right_header">
+              <div class="header_sub_title">
+                  <i class="fa-solid fa-user"></i>
+                  <div class="sub_title_span">ユーザーID</div>
+              </div>
+              <div class="header_sub_title" onclick="location.href=('WPR001G.html')">
+                  <i class="fa-solid fa-key"></i>
+                  <div class="sub_title_span">パスワード変更</div>
+              </div>
+              <div class="header_sub_title" onclick="location.href=('WPR002G.html')">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                  <div class="sub_title_span">ログアウト</div>
+              </div>
+
+
+          </div>
+
+      </phoneHeader>
+      <subHeader>
+          <div class="p_sub_title" id="subTitle">
+              <div id="navi_bar">
+                  <div class="subTitle_30">
+                      <a class="menu_title" href="WPR003G.html">ホーム</a>
+                  </div>
+                  <div class="subTitle_40">
+                      <p class="menu_title" onclick="javascript:fileUploadDrop()">ファイルアップロード</p>
+
+                  </div>
+                  <div class="subTitle_30" id="copyli">
+                      <p class="menu_title" onclick="javascript:copyContactDrop()">部数契約</p>
+
+                  </div>
+              </div>
+              <div id="fileUpload" class="flex2">
+                  <div class="sub_header_div">ファイルアップロード</div>
+                  <div><a href="WPR004G.html">アップロード・登録</a></div>
+                  <div><a href="WPR005G.html">登録ファイル閲覧</a></div>
+              </div>
+              <div id="copyContact" class="flex2">
+                  <div class="sub_header_div">部数契約</div>
+                  <div><a href="WPR006GN.html">部数契約承認</a></div>
+                  <div><a href="WPR007G.html">部数契約カレンダー閲覧</a></div>
+              </div>
+
+
+          </div>
+
+      </subHeader>
+
+    <div class="container">
+      <h1>登録ファイル検索</h1>
+      <div class="selectTable">
+        <div class="search_div">
+          <div class="name flex2">登録年月日</div>
+          <div class="name flex1">受付ID</div>
+          <div class="name flex1">ファイル名</div>
+
+        </div>
+        <div class="search_div">
+          <div class="search_div flex2">
+            <input type="text" class="dateInput"> ～ <input type="text" class="dateInput">
+          </div>
+          <div class="search_div flex1">
+            <input type="text" class="infoInput">
+          </div>
+          <div class="search_div flex1">
+            <input type="text" class="infoInput">
+          </div>
+        </div>
+        <div class="search_div">
+          <div class="name">ファイル種別</div>
+          <div class="radioType">
+            <input type="radio" name="fileType" value="すべて" checked>すべて
+            <input class="radioCheck" type="radio" name="fileType" value="搬入連絡表">搬入連絡表
+            <input class="radioCheck" type="radio" name="fileType" value="指定データ">指定データ
+            <input class="radioCheck" type="radio" name="fileType" value="指数データ">指数データ
+          </div>
+        </div>
+
+      </div>
+        <button class=" btn searchButton search_show"> 検索</button>
+
+        <a class="btn searchButton phone_icon" href="#popup1">
+          <div><i class="fa-solid fa-magnifying-glass"></i>検索</div>
+        </a>
+      
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <!-- <h2>Here i am</h2> -->
+          <!-- <a class="close" href="#">&times;</a> -->
+          <div class="content">
+            <!-- Thank to pop me out of that button, but now i'm done so you can close this window. -->
+            <div class="selectTable_phone">
+              <div class="search_div">
+                <div class="name flex1">登録年月日</div>
+                <div class="flex_row flex1">
+                  <input type="text" class="dateInput"> ～ <input type="text" class="dateInput">
+                </div>
+              </div>
+              <div class="search_div">
+                <div class="name flex1">ファイル種別</div>
+                <div class="search_div searchSelect ">
+                  <select class="infoInput">
+                    <option></option>
+                    <option>すべて</option>
+                    <option>搬入連絡表</option>
+                    <option>指定データ</option>
+                    <option>指数データ</option>
+                  </select>
+                </div>
+              </div>
+              <div class="search_div">
+                <div class="name flex1">受付ID</div>
+                <div class="search_div flex1">
+                  <input type="text" class="infoInput">
+                </div>
+
+              </div>
+              <div class="search_div">
+                <div class="name flex1">ファイル名</div>
+                <div class="search_div flex1">
+                  <input type="text" class="infoInput">
+                </div>
+
+
+              </div>
+
+              <div class="flex_row flex1">
+                <a class="btn searchBtn flex1 phone_message" href="#">
+                  <div class="phone_icon">検索<i class="fa-solid fa-magnifying-glass"></i></div>
+                </a>
+                <a class="btn searchBtn flex1 phone_message" href="#">キャンセル</a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <p class="message">○件のデータの部数年月公開日を更新しました。</p>
+      <p class="phone_message">検索件数は○○件です。 </p>
+      <table class="infoTable_phone">
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                2022/08/09 搬入連絡表 受付ID:xxxxxxxxxxxxxxxx
+
+              </div>
+              <div>
+                XX出版社_搬入連絡表.xlxs
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                2022/08/09 搬入連絡表 受付ID:xxxxxxxxxx
+
+              </div>
+              <div>
+                XX出版社_搬入連絡表.xlxs
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                2022/08/09 搬入連絡表 受付ID:xxxxxxxxxx
+
+              </div>
+              <div>
+                XX出版社_搬入連絡表.xlxs
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                2022/08/09 搬入連絡表 受付ID:xxxxxxxxxx
+
+              </div>
+              <div>
+                XX出版社_搬入連絡表.xlxs
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                2022/08/09 搬入連絡表 受付ID:xxxxxxxxxx
+
+              </div>
+              <div>
+                XX出版社_搬入連絡表.xlxs
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                2022/08/09 搬入連絡表 受付ID:xxxxxxxxxx
+
+              </div>
+              <div>
+                XX出版社_搬入連絡表.xlxs
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                2022/08/09 搬入連絡表 受付ID:xxxxxxxxxx
+
+              </div>
+              <div>
+                XX出版社_搬入連絡表.xlxs
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                2022/08/09 搬入連絡表 受付ID:xxxxxxxxxx
+
+              </div>
+              <div>
+                XX出版社_搬入連絡表.xlxs
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                2022/08/09 搬入連絡表 受付ID:xxxxxxxxxx
+
+              </div>
+              <div>
+                XX出版社_搬入連絡表.xlxs
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                2022/08/09 搬入連絡表 受付ID:xxxxxxxxxx
+
+              </div>
+              <div>
+                XX出版社_搬入連絡表.xlxs
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                2022/08/09 搬入連絡表 受付ID:xxxxxxxxxx
+
+              </div>
+              <div>
+                XX出版社_搬入連絡表.xlxs
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                2022/08/09 搬入連絡表 受付ID:xxxxxxxxxx
+
+              </div>
+              <div>
+                XX出版社_搬入連絡表.xlxs
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                2022/08/09 搬入連絡表 受付ID:xxxxxxxxxx
+
+              </div>
+              <div>
+                XX出版社_搬入連絡表.xlxs
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                2022/08/09 搬入連絡表 受付ID:xxxxxxxxxx
+
+              </div>
+              <div>
+                XX出版社_搬入連絡表.xlxs
+
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                2022/08/09 搬入連絡表 受付ID:xxxxxxxxxx
+
+              </div>
+              <div>
+                XX出版社_搬入連絡表.xlxs
+
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <div id="detail-div">
+        <div id="detail-table">
+          <table class="infoTable">
+            <thead class="tableHeader">
+              <tr>
+                <td class="align-center tdno">
+                  <div class=" scrBorder">
+                    <input type="checkbox" class="allCheckbox">
+                  </div>
+                </td>
+                <td class="tdno">
+                  <div class="td_div_flex scrBorder">
+                    <div class="div-inlin">No.</div>
+                    <!-- <div class="flex_5"><button class="sortButton">▼</button></div> -->
+                  </div>
+                </td>
+                <td>
+                  <div class="td_div_flex scrBorder">
+                    <div class="div-inlin">登録年月日</div>
+                    <!-- <div class="flex_5"><button class="sortButton">▼</button></div> -->
+                  </div>
+                </td>
+                <td>
+                  <div class="td_div_flex scrBorder">
+                    <div class="div-inlin">ファイル種別</div>
+                    <!-- <div class="flex_5"><button class="sortButton">▼</button></div> -->
+                  </div>
+                </td>
+                <td style>
+                  <div class="td_div_flex scrBorder">
+                    <div class="div-inlin">ファイル名</div>
+                    <!-- <div class="flex_5"><button class="sortButton">▼</button></div> -->
+                  </div>
+                </td>
+
+
+                <td>
+                  <div class="td_div_flex scrBorder">
+                    <div class="div-inlin">受付ID</div>
+                    <!-- <div class="flex_5"><button class="sortButton">▼</button></div> -->
+                  </div>
+                </td>
+                <td class="td_width_15">
+                  <div class="td_div_flex scrBorder">
+                    <div class="div-inlin">ダウンロード押下回数</div>
+                    <!-- <div class="flex_5"></div> -->
+                  </div>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="align-center tdno">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="tdno">1</td>
+                <td>2022/08/09</td>
+                <td>搬入連絡表</td>
+                <td>XX出版社_搬入連絡表.xlxs</td>
+                <td>xxxxxxxxxxxxxx</td>
+                <td class="td_width_15">xxxxxxxxxxxxxx</td>
+              </tr>
+              <tr>
+                <td class="align-center tdno">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="tdno">2</td>
+                <td>2022/08/15</td>
+                <td>指定データ</td>
+                <td>XX出版社_指定データ.xlxs</td>
+                <td>xxxxxxxxxxxxxx</td>
+                <td>xxxxxxxxxxxxxx</td>
+              </tr>
+              <tr>
+                <td class="align-center tdno">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="tdno">3</td>
+                <td>2022/08/01</td>
+                <td>指数データ</td>
+                <td>XX出版社_指数データ.xlxs</td>
+                <td>xxxxxxxxxxxxxx</td>
+                <td>xxxxxxxxxxxxxx</td>
+              </tr>
+              <tr>
+                <td class="align-center tdno">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="tdno">4</td>
+                <td>2022/08/12</td>
+                <td>指数データ</td>
+                <td>XX出版社_指数データ.xlxs</td>
+                <td>xxxxxxxxxxxxxx</td>
+                <td>xxxxxxxxxxxxxx</td>
+              </tr>
+              <tr>
+                <td class="align-center tdno">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="tdno">5</td>
+                <td>2022/08/12</td>
+                <td>指数データ</td>
+                <td>XX出版社_指数データ.xlxs</td>
+                <td>xxxxxxxxxxxxxx</td>
+                <td>xxxxxxxxxxxxxx</td>
+              </tr>
+              <tr>
+                <td class="align-center tdno">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="tdno">6</td>
+                <td>2022/08/12</td>
+                <td>指数データ</td>
+                <td>XX出版社_指数データ.xlxs</td>
+                <td>xxxxxxxxxxxxxx</td>
+                <td>xxxxxxxxxxxxxx</td>
+              </tr>
+              <tr>
+                <td class="align-center tdno">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="tdno">7</td>
+                <td>2022/08/12</td>
+                <td>指数データ</td>
+                <td>XX出版社_指数データ.xlxs</td>
+                <td>xxxxxxxxxxxxxx</td>
+                <td>xxxxxxxxxxxxxx</td>
+              </tr>
+              <tr>
+                <td class="align-center tdno">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="tdno">8</td>
+                <td>2022/08/12</td>
+                <td>指数データ</td>
+                <td>XX出版社_指数データ.xlxs</td>
+                <td>xxxxxxxxxxxxxx</td>
+                <td>xxxxxxxxxxxxxx</td>
+              </tr>
+              <tr>
+                <td class="align-center tdno">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="tdno">9</td>
+                <td>2022/08/12</td>
+                <td>指数データ</td>
+                <td>XX出版社_指数データ.xlxs</td>
+                <td>xxxxxxxxxxxxxx</td>
+                <td>xxxxxxxxxxxxxx</td>
+              </tr>
+              <tr>
+                <td class="align-center tdno">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="tdno">10</td>
+                <td>2022/08/12</td>
+                <td>指数データ</td>
+                <td>XX出版社_指数データ.xlxs</td>
+                <td>xxxxxxxxxxxxxx</td>
+                <td>xxxxxxxxxxxxxx</td>
+              </tr>
+              <tr>
+                <td class="align-center tdno">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="tdno">11</td>
+                <td>2022/08/12</td>
+                <td>指数データ</td>
+                <td>XX出版社_指数データ.xlxs</td>
+                <td>xxxxxxxxxxxxxx</td>
+                <td>xxxxxxxxxxxxxx</td>
+              </tr>
+              <tr>
+                <td class="align-center tdno">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="tdno">12</td>
+                <td>2022/08/12</td>
+                <td>指数データ</td>
+                <td>XX出版社_指数データ.xlxs</td>
+                <td>xxxxxxxxxxxxxx</td>
+                <td>xxxxxxxxxxxxxx</td>
+              </tr>
+              <tr>
+                <td class="align-center tdno">
+                  <input type="checkbox" class="allCheckbox">
+                </td>
+                <td class="tdno">13</td>
+                <td>2022/08/12</td>
+                <td>指数データ</td>
+                <td>XX出版社_指数データ.xlxs</td>
+                <td>xxxxxxxxxxxxxx</td>
+                <td>xxxxxxxxxxxxxx</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="button-area">
+          <button class="btn searchButton">ダウンロード</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <hr class="footer_hr">
+      <div class="footer_div">
+        Copyright&copy;2022 NIPPAN All Rights Reserved.
+      </div>
+    </footer>
+    <pfooter>
+      <div class="footer_div">
+        Copyright&copy;2022 NIPPAN All Rights Reserved.
+      </div>
+    </pfooter>
+  </div><!-- /wrap -->
+</body>
